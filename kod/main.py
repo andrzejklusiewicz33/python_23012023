@@ -520,3 +520,20 @@
 
 #13. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
 # Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
+#
+# my_list=[]
+# for p in range(1,11):
+#     my_list.append(pow(2,p))
+# print(my_list)
+# for ml in my_list:
+#     print(ml)
+#
+# for f in [pow(2,e) for e in range(1,11)]: print(f)
+
+my_list=[1,5,22,2,33,190,-89]
+print(max(my_list))
+print(min(my_list))
+print(sum(my_list))
+print(sum(my_list)/len(my_list))
+
+#14. Stwórz listę zawierającą 100 losowych liczb i wyświetl różnicę pomiędzy największą a najmniejszą wartością w tej liście...
