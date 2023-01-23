@@ -216,3 +216,6 @@
 
 
 #5. Wyświetl 20 kolejnych potęg liczby 2
+
+
+
