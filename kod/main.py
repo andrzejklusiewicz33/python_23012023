@@ -7,14 +7,14 @@
 #     print(f'x={x}')
 # print('koniec')
 
-#formatowanie kodu ctrl+alt+L
-#zakomentowywanie i odkomentowywanie ctrl+/
+# formatowanie kodu ctrl+alt+L
+# zakomentowywanie i odkomentowywanie ctrl+/
 
 # print("Siema!")
 # print('Siema!')
 # print("Mc'Donalds")
-#int x=1 #java
-#x=1
+# int x=1 #java
+# x=1
 # x=10
 # y=20
 # z=x*y
@@ -60,11 +60,11 @@
 # print(f'Twój ulubiony owoc to {owoc}')
 
 
-#1. Napisz program który przyjmie od użyszkodnika imię oraz nazwisko, a następnie
-#wypisze na konsoli komunikat typu "Witaj TwojeImie TwojeNazwisko!"
+# 1. Napisz program który przyjmie od użyszkodnika imię oraz nazwisko, a następnie
+# wypisze na konsoli komunikat typu "Witaj TwojeImie TwojeNazwisko!"
 
 
-#get_all_pracownicy #fuuuuu
+# get_all_pracownicy #fuuuuu
 
 # first_name=input('podaj imię:\n')
 # last_name=input('podaj nazwisko:\n')
@@ -76,16 +76,16 @@
 # }
 # }
 
-#print('OMG!')
+# print('OMG!')
 
-#PEP8
+# PEP8
 
-#import this
+# import this
 
 
 # x=input('podaj x:\n')
 # print(x,type(x))
-#print(x/10)
+# print(x/10)
 
 # x=float(  input('podaj x:\n')   ) #float,int,str
 # print(x,type(x))
@@ -97,9 +97,9 @@
 # f=float(input('podaj f:\n'))
 # print(f)
 
-#print(pow(10,4))
+# print(pow(10,4))
 
-#2. BMI= masa/(wzrost*wzrost) . Napisz program który odbierze od użytkownika jego masę
+# 2. BMI= masa/(wzrost*wzrost) . Napisz program który odbierze od użytkownika jego masę
 # w kilogramach i wzrost w metrach, wyliczy i wypisze BMI.
 
 # height=float(input('podaj wzrost w metrach:\n'))
@@ -108,7 +108,7 @@
 # print(f'bmi={bmi}')
 
 
-#przerwa do 11:51
+# przerwa do 11:51
 
 # x=1
 # if 1==1:
@@ -138,7 +138,7 @@
 # else:
 #     print('poza zakresem')
 
-#3. Niech użytkownik poda jakąś liczbę. Jeśli poda dodatnią to chcemy wyświetlić tę wartość
+# 3. Niech użytkownik poda jakąś liczbę. Jeśli poda dodatnią to chcemy wyświetlić tę wartość
 # z informacją "wartość dodatnia", jeśli zero to wyświetlamy z informacją "równe zero",
 # jeśli ujemna to wyświetlamy "wartość ujemna".
 
@@ -152,8 +152,7 @@
 #     print(f'{x} jest ujemne')
 
 
-
-#4. Rozbuduj swój program do bmi w taki sposob by poza wyswietleniem obliczonego bmi
+# 4. Rozbuduj swój program do bmi w taki sposob by poza wyswietleniem obliczonego bmi
 #  wyświetlił nam również odpowiedni opis wg skali z Wikipedii.
 
 
@@ -215,7 +214,7 @@
 # print('koniec x=',x)
 
 
-#5. Wyświetl 20 kolejnych potęg liczby 2
+# 5. Wyświetl 20 kolejnych potęg liczby 2
 
 
 # for koza in range(1,21):
@@ -234,7 +233,7 @@
 #     else:
 #         print(f'{x} jest dodatnie')
 
-#6. Wydrukuj liczby w zakresie 1-100 wypisujac obok czy dana liczba jest
+# 6. Wydrukuj liczby w zakresie 1-100 wypisujac obok czy dana liczba jest
 #  parzysta czy nieparzysta
 #
 # print(11%2)
@@ -251,17 +250,17 @@
 #         print(f'{x} jest nieparzysta')
 
 
-#przerwa obiadowa do 13:10
+# przerwa obiadowa do 13:10
 
-#7.  Napisz symulator lokaty. Symulator ma przyjmować przez zmienne:
-  # - kwotę lokaty
-  # - oprocentowanie w skali roku
-  # - ilość miesięcy na jaką zakladamy lokatę
-  # Symulator ma dla każdego miesiąca lokaty wypisać który to miesiąc
-  # oraz ile mamy aktualnie zgromadzone na koncie po doliczeniu odsetek.
-  # Kapitalizacja comiesięczna
+# 7.  Napisz symulator lokaty. Symulator ma przyjmować przez zmienne:
+# - kwotę lokaty
+# - oprocentowanie w skali roku
+# - ilość miesięcy na jaką zakladamy lokatę
+# Symulator ma dla każdego miesiąca lokaty wypisać który to miesiąc
+# oraz ile mamy aktualnie zgromadzone na koncie po doliczeniu odsetek.
+# Kapitalizacja comiesięczna
 
-#im=int(input('dej...'))
+# im=int(input('dej...'))
 #
 # money=100000
 # interest=0.08
@@ -300,7 +299,7 @@
 #     x=x*2
 
 
-#8.Napisz program który będzie dodawał kolejne losowe wartości z zakresu
+# 8.Napisz program który będzie dodawał kolejne losowe wartości z zakresu
 # od 1 do 10 do zmiennej suma, tak dlugo az suma nie osiagnie wartosci wiekszej od wartosci podanej przez uzytkownika
 
 # import random
@@ -392,11 +391,11 @@
 # print(tekst[0:15:2])
 # print(tekst[0:15].upper().replace('A','X'))
 
-#9.  Napisz program który przyjmie od użyszkodnika ciąg tekstowy a następnie usunie z niego znaki ,.!? i
+# 9.  Napisz program który przyjmie od użyszkodnika ciąg tekstowy a następnie usunie z niego znaki ,.!? i
 # wyświetli powiększony do dużych liter tekst na konsoli
 
-#text=input('Dej mnie teksta:\n')
-#print(text.replace(',','').replace('.','').replace('!','').replace('?','').upper())
+# text=input('Dej mnie teksta:\n')
+# print(text.replace(',','').replace('.','').replace('!','').replace('?','').upper())
 
 # text=input('Dej mnie teksta:\n')
 # niechciane=[',','.','?','!']
@@ -404,7 +403,7 @@
 #     text=text.replace(n,'')
 # print(text.upper())
 
-#przerwa do 14:30
+# przerwa do 14:30
 
 # for linia in open('linie.txt'):
 #     print(linia)
@@ -421,7 +420,7 @@
 #     print(len(linia.strip()),linia.strip())
 
 
-#10. Napisz program który wyświetli na konsoli niepuste linie z pliku tekstowego którego nazwę poda użytkownik
+# 10. Napisz program który wyświetli na konsoli niepuste linie z pliku tekstowego którego nazwę poda użytkownik
 #
 # for line in open('tadzio.txt',encoding='utf-8'):
 #     if len(line.strip())>0:
@@ -434,7 +433,7 @@
 # all=open('tadzio.txt',encoding='utf-8').read(100)
 # print(all.replace('a','X'))
 
-#11. Napisz program który zliczy ilość wystąpień małej lub dużej wersji ciagu tekstowego podanego
+# 11. Napisz program który zliczy ilość wystąpień małej lub dużej wersji ciagu tekstowego podanego
 # przez użytkownika w pliku którego nazwę również poda użytkownik.
 #
 # phrase=input('podaj poszukiwaną frazę:\n')
@@ -448,11 +447,11 @@
 # print( all.lower().count(phrase.lower())  )
 
 
-#12. Napisz wyszukiwarkę plikową. Wyszukiwarka powinna odebrać od użytkownika
- # poszukiwaną frazę, oraz nazwę pliku. Wyszukiwarka powinna wyświetlić
- #  linie w których znalazła poszukiwaną frazę wraz z numerem linii. Wyszukiwarka
- #   po  odebraniu danych od uzyszkodnika powinna wyswietlic jakiej frazy
- #  i w jakim pliku szuka. Wyszukiwarka powinna być nieczula na wielkosc liter.
+# 12. Napisz wyszukiwarkę plikową. Wyszukiwarka powinna odebrać od użytkownika
+# poszukiwaną frazę, oraz nazwę pliku. Wyszukiwarka powinna wyświetlić
+#  linie w których znalazła poszukiwaną frazę wraz z numerem linii. Wyszukiwarka
+#   po  odebraniu danych od uzyszkodnika powinna wyswietlic jakiej frazy
+#  i w jakim pliku szuka. Wyszukiwarka powinna być nieczula na wielkosc liter.
 #
 # if "BABA".lower() in "siała baba mak".lower():
 #     print('jest')
@@ -462,3 +461,62 @@
 # nl=0
 # for linia in open(....):
 #     nl+=1
+#
+# all=open('tadzio.txt',encoding='utf-8').read()
+# for linia in all:
+#     print(linia)
+#
+# tekst="abcd"
+# for t in tekst:
+#     print(t)
+
+# file_name=input('podaj nazwę pliku:\n')
+# phrase=input('podaj szukaną frazę:\n')
+# x=0
+# for line in open('tadzio.txt',encoding='utf-8'):
+#     x+=1
+#     if phrase.lower() in line.lower():
+#         print(x,line.strip())
+
+#
+# lines_count = len(open('tadzio.txt', encoding='utf-8').readlines())
+# print(f'liczba linii w pliku 1 = {lines_count}')
+# lines_count2 = len(open('tadzio2.txt', encoding='utf-8').readlines())
+# print(f'liczba linii w pliku 1 = {lines_count2}')
+# if lines_count == lines_count2 and lines_count > 0:
+#     print('liczba linii taka sama. Pracujemy....')
+#     file1 = open('tadzio.txt', encoding='utf-8')
+#     file2 = open('tadzio2.txt', encoding='utf-8')
+#     for x in range(1, lines_count + 1):
+#         line1=file1.readline()
+#         line2=file2.readline()
+#         if line1!=line2:
+#             print(line1.strip(),' | ',line2.strip())
+# else:
+#     print('różna liczba linii. Nie pracujemy')
+#
+#
+
+
+# my_list=[]
+# print(type(my_list))
+# my_tuple=()
+# print(type(my_tuple))
+#
+# my_list=[]
+# my_list=list()
+# my_list=[1,2,'nietoperz',3,4,5,'koza']
+# my_list.append(33333)
+# for e in my_list:
+#     print(e)
+
+# import random
+# my_list=[]
+# for x in range(10):
+#     my_list.append(random.randint(1,100))
+# print(my_list)
+# for e in my_list:
+#     print(e)
+
+#13. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
+# Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
