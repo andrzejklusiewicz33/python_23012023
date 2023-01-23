@@ -101,3 +101,43 @@
 
 #2. BMI= masa/(wzrost*wzrost) . Napisz program który odbierze od użytkownika jego masę
 # w kilogramach i wzrost w metrach, wyliczy i wypisze BMI.
+
+# height=float(input('podaj wzrost w metrach:\n'))
+# weight=float(input('podaj masę w kilogramach:\n'))
+# bmi=round(weight/pow(height,2),2)
+# print(f'bmi={bmi}')
+
+
+#przerwa do 11:51
+
+# x=1
+# if 1==1:
+#     pass
+
+# x=0
+# if x>5:
+#     print('warunek prawdziwy')
+#     print('x jest większe od 5')
+# print('koniec')
+
+# x=10
+# if x>5:
+#     print('warunek prawdziwy')
+# else:
+#     print('warunek nie prawdziwy')
+#
+# x=3
+# if x==1:
+#     print('jeden')
+# elif x==2:
+#     print('dwa')
+# elif x==3:
+#     print('trzy')
+# elif x==4:
+#     print('cztery')
+# else:
+#     print('poza zakresem')
+
+#3. Niech użytkownik poda jakąś liczbę. Jeśli poda dodatnią to chcemy wyświetlić tę wartość
+# z informacją "wartość dodatnia", jeśli zero to wyświetlamy z informacją "równe zero",
+# jeśli ujemna to wyświetlamy "wartość ujemna".
