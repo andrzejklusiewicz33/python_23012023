@@ -422,3 +422,17 @@
 
 
 #10. Napisz program który wyświetli na konsoli niepuste linie z pliku tekstowego którego nazwę poda użytkownik
+#
+# for line in open('tadzio.txt',encoding='utf-8'):
+#     if len(line.strip())>0:
+#         print(len(line.strip()),line.strip())
+#
+# all=open('tadzio.txt',encoding='utf-8').read()
+# print(all.replace('a','X'))
+
+#
+# all=open('tadzio.txt',encoding='utf-8').read(100)
+# print(all.replace('a','X'))
+
+#11. Napisz program który zliczy ilość wystąpień małej lub dużej wersji ciagu tekstowego podanego
+# przez użytkownika w pliku którego nazwę również poda użytkownik.
