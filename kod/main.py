@@ -436,3 +436,29 @@
 
 #11. Napisz program który zliczy ilość wystąpień małej lub dużej wersji ciagu tekstowego podanego
 # przez użytkownika w pliku którego nazwę również poda użytkownik.
+#
+# phrase=input('podaj poszukiwaną frazę:\n')
+# file_name=input('podaj nazwę pliku:\n ')
+# print(  open(file_name,encoding='utf-8').read().lower().count(phrase.lower())  )
+
+#
+# phrase=input('podaj poszukiwaną frazę:\n')
+# file_name=input('podaj nazwę pliku:\n ')
+# all= open(file_name,encoding='utf-8').read()
+# print( all.lower().count(phrase.lower())  )
+
+
+#12. Napisz wyszukiwarkę plikową. Wyszukiwarka powinna odebrać od użytkownika
+ # poszukiwaną frazę, oraz nazwę pliku. Wyszukiwarka powinna wyświetlić
+ #  linie w których znalazła poszukiwaną frazę wraz z numerem linii. Wyszukiwarka
+ #   po  odebraniu danych od uzyszkodnika powinna wyswietlic jakiej frazy
+ #  i w jakim pliku szuka. Wyszukiwarka powinna być nieczula na wielkosc liter.
+#
+# if "BABA".lower() in "siała baba mak".lower():
+#     print('jest')
+# else:
+#     print('niet!')
+#
+# nl=0
+# for linia in open(....):
+#     nl+=1
