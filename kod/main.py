@@ -261,4 +261,44 @@
   # oraz ile mamy aktualnie zgromadzone na koncie po doliczeniu odsetek.
   # Kapitalizacja comiesięczna
 
-#hajs=100000
+#im=int(input('dej...'))
+#
+# money=100000
+# interest=0.08
+# len=24
+# for m in range(1,len+1):
+#     money=round(money+(money*interest/12),2)
+#     print(m,money)
+
+#
+# money=100000
+# interest=-0.2
+# len=60
+# for m in range(1,len+1):
+#     money=round(money+(money*interest/12),2)
+#     print(m,money)
+
+
+#
+# money=100000
+# interest=0.08
+# len=24
+# for m in range(1,len+1):
+#     money=round(money+(money*interest/12),2)
+#     print(m,money)
+
+
+# import random
+# print(random.randint(1,100))
+# print(random.random())
+# x=random.randint(1,100)
+# print(x)
+
+# x=1
+# while x<=100:
+#     print(x)
+#     x=x*2
+
+
+#8.Napisz program który będzie dodawał kolejne losowe wartości z zakresu
+# od 1 do 10 do zmiennej suma, tak dlugo az suma nie osiagnie wartosci wiekszej od wartosci podanej przez uzytkownika
