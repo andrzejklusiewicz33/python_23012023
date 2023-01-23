@@ -218,4 +218,29 @@
 #5. Wyświetl 20 kolejnych potęg liczby 2
 
 
+# for koza in range(1,21):
+#     print(koza, pow(2,koza))
+#
+# x=int(input('podaj krotność:\n'))
+# if x>0:
+#     for i in range(1,x+1):
+#         print(i)
+#
+# for x in range(-10,11):
+#     if x<0:
+#         print(f'{x} jest ujemne')
+#     elif x==0:
+#         print(f'{x} jest zerem')
+#     else:
+#         print(f'{x} jest dodatnie')
+
+#6. Wydrukuj liczby w zakresie 1-100 wypisujac obok czy dana liczba jest
+#  parzysta czy nieparzysta
+#
+# print(11%2)
+#
+# if 11%2==0:
+#     print('parzysta...')
+# else:
+#     print('nieparzysta...')
 
