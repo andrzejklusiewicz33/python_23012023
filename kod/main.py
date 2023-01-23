@@ -302,3 +302,96 @@
 
 #8.Napisz program który będzie dodawał kolejne losowe wartości z zakresu
 # od 1 do 10 do zmiennej suma, tak dlugo az suma nie osiagnie wartosci wiekszej od wartosci podanej przez uzytkownika
+
+# import random
+# max=int(input('podaj maksymalną wartość:\n'))
+# sum=0
+# while sum<max:
+#     sum=sum+random.randint(1,10)
+#     print(sum)
+#
+# import random
+# max=int(input('podaj maksymalną wartość:\n'))
+# sum=0
+# while sum<max:
+#     print(sum)
+#     sum = sum + random.randint(1, 10)
+
+
+# import random
+# max=int(input('podaj maksymalną wartość:\n'))
+# sum=0
+# while sum<max:
+#     print(sum)
+#     #sum = sum + random.randint(1, 10)
+#     sum += random.randint(1, 10)
+#
+
+# x=x+1
+# x+=1
+# x=x/2
+# x/=2
+#
+# for wiersz in cursor:
+#     print(wiersz)
+
+# tekst="siała baba mak i dostała 10 lat bo nie płaciła VAT"
+# print(tekst.upper())
+# print(tekst.lower())
+# print(tekst.title())
+# print(tekst.replace('a','X'))
+# print(tekst.replace('a','X').replace('A','X'))
+# print(tekst.lower().replace('a','X'))
+# print(tekst.upper().replace('A','X'))
+# print(tekst)
+# tekst=tekst.upper()
+# print(tekst)
+# print( len(tekst) )
+# lista=[1,2,3,4,5]
+# print(len(lista))
+# print(tekst.len()) #fuuuuu
+
+#
+# tekst="siała baba mak i dostała 10 lat bo nie płaciła VAT"
+# print(tekst.count('a'))
+# print(tekst.lower().count('a'))
+
+# if 'bab' in tekst:
+#     print('jest')
+# else:
+#     print('nie ma')
+#
+# if 'BAB'.lower() in tekst.lower():
+#     print('jest')
+# else:
+#     print('nie ma')
+#
+
+# tekst="siała baba mak i dostała 10 lat bo nie płaciła VAT"
+# tekst="           abc      dupa\n"
+# print(tekst)
+# print('-----')
+# print(tekst.strip())
+# print(tekst.strip().replace(' ',''))
+
+# tekst="siała baba mak i dostała 10 lat bo nie płaciła VAT"
+# for l in tekst:
+#     print(l)
+#
+# tekst='pinionszki'
+# print(tekst*100)
+#
+# if "Java">"Python":
+#     print('chyba Cię gnie...')
+# else:
+#     print('no rejczel..')
+#
+
+# tekst="siała baba mak i dostała 10 lat bo nie płaciła VAT"
+# print(tekst[0:15])
+# print(tekst[0:15:2])
+# print(tekst[0:15].upper().replace('A','X'))
+
+#9.  Napisz program który przyjmie od użyszkodnika ciąg tekstowy a następnie usunie z niego znaki ,.!? i
+# wyświetli powiększony do dużych liter tekst na konsoli
+
