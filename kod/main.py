@@ -62,3 +62,42 @@
 
 #1. Napisz program który przyjmie od użyszkodnika imię oraz nazwisko, a następnie
 #wypisze na konsoli komunikat typu "Witaj TwojeImie TwojeNazwisko!"
+
+
+#get_all_pracownicy #fuuuuu
+
+# first_name=input('podaj imię:\n')
+# last_name=input('podaj nazwisko:\n')
+# print(f"Witaj {first_name} {last_name}!")
+#
+# public class Main {
+#     public static void main(String args[]){
+#         System.out.println("WTF????");
+# }
+# }
+
+#print('OMG!')
+
+#PEP8
+
+#import this
+
+
+# x=input('podaj x:\n')
+# print(x,type(x))
+#print(x/10)
+
+# x=float(  input('podaj x:\n')   ) #float,int,str
+# print(x,type(x))
+# print(x*1000)
+# x=10
+# y=3
+# print( round(x/y,2) )
+#
+# f=float(input('podaj f:\n'))
+# print(f)
+
+#print(pow(10,4))
+
+#2. BMI= masa/(wzrost*wzrost) . Napisz program który odbierze od użytkownika jego masę
+# w kilogramach i wzrost w metrach, wyliczy i wypisze BMI.
