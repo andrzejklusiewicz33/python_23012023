@@ -628,7 +628,6 @@
 # print(lista)
 
 
-
 # lista=[]
 # for x in range(1,11):
 #     lista.append([x,x*100])
@@ -636,9 +635,9 @@
 # for e in lista:
 #     print(e)
 
-#16. Korzystajac z petli stworz liste zawierajaca elementy same bedace listami.
+# 16. Korzystajac z petli stworz liste zawierajaca elementy same bedace listami.
 # Kazdy taki element ma zawierac numer potegi oraz wartosc tej potegi dla liczby 2.
-#print(pow(2,10))
+# print(pow(2,10))
 #
 # list=[]
 # for x in range(1,11):
@@ -729,9 +728,9 @@
 # lista=[random.randint(1,10) for x in range(10) if x%2==0]
 # print(lista)
 
- #select * from products where cena<100 and
+# select * from products where cena<100 and
 
- #17. Korzystając z list składanych wygeneruj listę zawierajaca 10 kolejnych poteg 2
+# 17. Korzystając z list składanych wygeneruj listę zawierajaca 10 kolejnych poteg 2
 
 # lista=[]
 # for x in range(1,11):
@@ -750,7 +749,7 @@
 #
 # print([pow(2,x) for x in range(1,11)])
 
-#18. Korzystając z list składanych wygeneruj listę 10 elementow której każdy element również będzie listą.
+# 18. Korzystając z list składanych wygeneruj listę 10 elementow której każdy element również będzie listą.
 # Pierwszy element tej podlisty to numer potegi, a drugi to wartosc tej potegi dla liczby 2
 #
 # result=[ [e,pow(2,e)] for e in range(1,11)]
@@ -760,7 +759,7 @@
 #
 # print([ [e,pow(2,e)] for e in range(1,11)])
 
-#przerwa do 10:15
+# przerwa do 10:15
 
 # linia='1;Andrzej;Klusiewicz'
 # lista=linia.split(';')
@@ -779,7 +778,7 @@
 #     print(linia.strip())
 
 
-#19. Napisz program który z pliku dane.csv wyświetli powiekszone imiona i nazwiska oraz wzrost i masę
+# 19. Napisz program który z pliku dane.csv wyświetli powiekszone imiona i nazwiska oraz wzrost i masę
 
 # for linia in open('dane.csv',encoding='utf-8'):
 #     lista=linia.strip().split(';')
@@ -801,7 +800,7 @@
 # for r in result:
 #     print(r)
 
-#20. Korzystajac z list skladanych zaladuj do listy zawartosc pliku dane.csv w taki sposób
+# 20. Korzystajac z list skladanych zaladuj do listy zawartosc pliku dane.csv w taki sposób
 # by linie oczyścic z bialych znaków i rozbić na listy. Każdy z elementów listy sam
 # powinien byc listą. Następnie przeiteruj po wyniku i wyświetl wszystkie elementy listy   linia po linii.
 
@@ -847,7 +846,7 @@
 # except ValueError:
 #     print('to nie jest liczba, nie da się tego rzutować')
 
-#21. Dla każdego wpisu w pliku dane.csv wyświetl na konsoli dane o
+# 21. Dla każdego wpisu w pliku dane.csv wyświetl na konsoli dane o
 #   id, imieniu,nazwisku, wzroscie,masie oraz obliczonym bmi zawodnika
 
 
@@ -929,7 +928,7 @@
 # lista.sort()
 # print(lista)
 
-#22.Wygeneruj listę 10 elementów o losowej wartości liczbowej,
+# 22.Wygeneruj listę 10 elementów o losowej wartości liczbowej,
 # posortuj listę (malejąco) i wyświetl jej zawartość linia po linii
 
 # import random
@@ -945,7 +944,7 @@
 # result.reverse() #większa złożonośc obliczeniowa w stosunku do .sort(reseversed=True)
 # print(result)
 
-#przerwa do 11:27
+# przerwa do 11:27
 #
 # lista=[
 #     [2,'C'],
@@ -956,7 +955,7 @@
 # lista.sort()
 # print(lista)
 
-#from operator import itemgetter
+# from operator import itemgetter
 # lista=[
 #     [2,'C'],
 #     [1,'D'],
@@ -994,7 +993,7 @@
 # for e in list:
 #     print(e)
 
-#23. Wczytaj do listy kolejne wiersze z pliku dane.csv.
+# 23. Wczytaj do listy kolejne wiersze z pliku dane.csv.
 # Dane posortuj po nazwiskach i wyswietl linia po linii na konsoli.
 
 # data=[line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]
@@ -1013,7 +1012,7 @@
 # for d in data:
 #     print(d)
 
-#24. Wyświetl na konsoli linia po linii dane z pliku dane.csv ale posortowane  malejąco wg. bmi
+# 24. Wyświetl na konsoli linia po linii dane z pliku dane.csv ale posortowane  malejąco wg. bmi
 #
 # data=[line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]
 # for d in data:
@@ -1074,7 +1073,7 @@
 #     else:
 #         print(f'nie ma w {e}')
 
-#25. Napisz wyszukiwarkę plików która przyjmie od użytkownika szukaną frazę i katalog startowy.
+# 25. Napisz wyszukiwarkę plików która przyjmie od użytkownika szukaną frazę i katalog startowy.
 # Wyszukiwarka ma wyswietlić wszystkie pliki i katalogi zawierajace w nazwie szukaną
 # frazę - wraz ze ścieżkami. Wyszukiwarka ma być nieczuła na wielkość liter
 #
@@ -1108,7 +1107,7 @@
 #         if szukane.lower() in p.lower():
 #             print(os.path.join(e[0],p))
 
-#przerwa obiadowa do 13:10
+# przerwa obiadowa do 13:10
 
 # lista=[1,2,3]
 # krotka=(1,2,3)
@@ -1135,7 +1134,7 @@
 # krotka=tuple(lista)
 # print(krotka)
 
-#26. Stwórz dwie krotki. Jedna ma zawierać 10 losowych liczb zakresu 1-10,
+# 26. Stwórz dwie krotki. Jedna ma zawierać 10 losowych liczb zakresu 1-10,
 # druga 10 losowych liczb zakresu 11-20. Stwórz trzecią krotkę która ma zawierać dane z obu krotek.
 # Trzecią krotkę wypisz na konsoli
 
@@ -1147,7 +1146,7 @@
 # k3=(*k1,*k2)
 # print(k3,type(k3))
 
-#27. Napisz kod ktora wyświetli w postaci listy krotek zawartość pliku dane.csv
+# 27. Napisz kod ktora wyświetli w postaci listy krotek zawartość pliku dane.csv
 
 # result=[line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]
 # for r in result:
@@ -1160,7 +1159,7 @@
 #     print(r)
 
 
-#for r in [tuple(line.strip().split(';')) for line in open('dane.csv',encoding='utf-8')]: print(r)
+# for r in [tuple(line.strip().split(';')) for line in open('dane.csv',encoding='utf-8')]: print(r)
 
 # z={1,1,1,1,1,1,1,5,5,5,5,5,5,5,5,2,2,2,2,2,2,3,3,3,3,3,3,3,3}
 # print(z)
@@ -1188,6 +1187,37 @@
 # lista=list(set([1,2,1,1,1,2,2,2,2,2,3,4,1,1,2,2,3,3,4]))
 # print(lista)
 
-#28. Wygeneruj dwa zestawy, dodaj do nich po 20
+# 28. Wygeneruj dwa zestawy, dodaj do nich po 20
 # (w przypadku duplikatów lista może być mniejsza niż 20 elementów)
 # losowych liczb z zakresu 1-40. Wyswietl ich sumę, różnicę i część wspólną
+
+# import random
+# z1=set([random.randint(1,40) for e in range(20)])
+# z2=set([random.randint(1,40) for e in range(20)])
+# print(z1,f'len(z1)={len(z1)}')
+# print(z2,f'len(z1)={len(z2)}')
+
+# import random
+# z1 = set()
+# z2 = set()
+# for _ in range(20):
+#     z1.add(random.randint(1, 40))
+#     z2.add(random.randint(1, 40))
+# print(z1,f'len(z1)={len(z1)}')
+# print(z2,f'len(z1)={len(z2)}')
+
+# import random
+# z1=set([random.randint(1,40) for e in range(20)])
+# z2=set([random.randint(1,40) for e in range(20)])
+# print(z1,f'len(z1)={len(z1)}')
+# print(z2,f'len(z1)={len(z2)}')
+# print("suma=",z1.union(z2))
+# print("część wspólna=",z1.intersection(z2))
+# print("z1-z2=",z1.difference(z2))
+# print("z2-z1=",z2.difference(z1))
+
+
+#29. Zduplikuj jeden z wierszy w pliku dane.csv.
+# Napisz kod który zwróci do postaci listy krotek zawartość tego pliku z danymi bez powtórek.
+
+#unhashable type list -- brakuje rzutowania elementów listy na krotki
