@@ -639,3 +639,96 @@
 #16. Korzystajac z petli stworz liste zawierajaca elementy same bedace listami.
 # Kazdy taki element ma zawierac numer potegi oraz wartosc tej potegi dla liczby 2.
 #print(pow(2,10))
+#
+# list=[]
+# for x in range(1,11):
+#     sublist=[x,pow(2,x)]
+#     list.append(sublist)
+#
+# print(list)
+# for e in list:
+#     print(e)
+
+
+#
+# list=[]
+# for x in range(1,11):
+#     list.append([x,pow(2,x)])
+#
+# print(list)
+# for e in list:
+#     print(e)
+#
+# lista=[]
+# for x in range(1,11):
+#     lista.append(x)
+#
+# print(lista)
+#
+# lista=[x for x in range(1,11)]
+# print(lista)
+#
+# print([x for x in range(1,11)])
+
+
+# lista=[x*1000 for x in range(1,11)]
+# print(lista)
+
+#
+# lista=[]
+# for x in range(1,101):
+#     if x%2==0:
+#         lista.append(x)
+#
+# print(lista)
+
+# lista=[x for x in range(1,101) if x%2==0 ]
+# print(lista)
+
+# print([x for x in range(1,101) if x%2==0 ])
+#
+# print([x*100 for x in range(1,101) if x%2==0 ])
+
+# import random
+# lista=[]
+# for x in range(1,11):
+#     lista.append(random.randint(1,10))
+# print(lista)
+#
+# import random
+# lista=[random.randint(1,10) for e in range(1,11)]
+# print(lista)
+#
+# import random
+# print([random.randint(1,10) for e in range(1,11)])
+
+# import random
+# lista1=[]
+# for x in range(1,11):
+#     lista1.append(random.randint(1,10))
+# print(lista1)
+#
+# lista2=[]
+# for e in lista1:
+#     if e%2==0:
+#         lista2.append(e)
+# print(lista2)
+
+# import random
+# lista1=[random.randint(1,10) for x in range(10)]
+# lista2=[e for e in lista1 if e%2==0]
+#
+# print(lista1)
+# print(lista2)
+#
+# import random
+# lista2=[e for e in [random.randint(1,10) for x in range(10)] if e%2==0]
+#
+# print(lista2)
+#
+# lista=[random.randint(1,10) for x in range(10) if x%2==0]
+# print(lista)
+
+ #select * from products where cena<100 and
+
+ #17. Korzystając z list składanych wygeneruj listę zawierajaca 10 kolejnych poteg 2
