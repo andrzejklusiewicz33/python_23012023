@@ -805,10 +805,51 @@
 # by linie oczyścic z bialych znaków i rozbić na listy. Każdy z elementów listy sam
 # powinien byc listą. Następnie przeiteruj po wyniku i wyświetl wszystkie elementy listy   linia po linii.
 
+#
+# result=[]
+# for linia in open('dane.csv',encoding='utf-8'):
+#     result.append(linia.strip().split(';'))
+#
+# for r in result:
+#     print(r)
+#
 
-result=[]
-for linia in open('dane.csv',encoding='utf-8'):
-    result.append(linia.strip().split(';'))
+#
+# result=[linia for linia in open('dane.csv',encoding="utf-8").readlines()]
+# for r in result:
+#     print(r)
 
-for r in result:
-    print(r)
+
+#
+# for r in [linia for linia in open('dane.csv',encoding="utf-8")]:
+#     print(r)
+
+# result=[linia.strip().split(';') for linia in open('dane.csv',encoding="utf-8")]
+# for r in result:
+#     print(r)
+
+# for r in [linia.strip().split(';') for linia in open('dane.csv',encoding="utf-8")]:
+#     print(r[3],type(r[3]))
+#
+# for r in [linia.strip().split(';') for linia in open('dane.csv',encoding="utf-8")]:
+#     print(float(r[3])/2)
+#
+# x=1.4
+# if type(x)==int:
+#     print('to jest liczba całkowita')
+# elif type(x)==float:
+#     print('to jest liczba zmiennoprzecinkowa')
+#
+
+# x='koza'
+# try:
+#     print(float(x))
+# except ValueError:
+#     print('to nie jest liczba, nie da się tego rzutować')
+
+#21. Dla każdego wpisu w pliku dane.csv wyświetl na konsoli dane o
+#   id, imieniu,nazwisku, wzroscie,masie oraz obliczonym bmi zawodnika
+
+
+for r in [linia.strip().split(';') for linia in open('dane.csv',encoding="utf-8")]:
+    print(r[1],r[2],float(r[3])/2)
