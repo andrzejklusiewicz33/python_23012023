@@ -1255,3 +1255,31 @@
 # Następnie wczytaj dane do słownika w ten sposób by pierwsza kolumna stanowila
 # klucze a druga przypisane do nich
 # wartości. Przeiteruj po słowniku i wypisz klucze oraz przypisane do nich wartości
+
+
+# for e in  [linia.strip().split('=') for linia in open('ustawienia.conf',encoding='utf-8')]:
+#     print(e)
+#
+# sl=dict()
+# for e in  [linia.strip().split('=') for linia in open('ustawienia.conf',encoding='utf-8')]:
+#     sl[e[0]]=e[1]
+
+#
+# sl=dict()
+# for e in  [linia.strip().split('=') for linia in open('ustawienia.conf',encoding='utf-8')]:
+#     sl[ e[0] ]=e[1]
+# #    sl[klucz]=wartosc
+# print(sl)
+#
+# for k in sl:
+#     print(k,sl[k])
+
+# print(sl['encoding'])
+
+
+#31.Wczytaj do słownika dane z pliku dane.csv tak by kluczem było imię sklejone
+# z nazwiskiem rozdzielone spacja (powiekszone do duzych liter),
+# a wartością cały wiersz jako krotka lub lista.
+# Przeiteruj po slowniku i wyswietl jego zawartość.
+
+#print(sl['ANDRZEJ KLUSIEWICZ'])
