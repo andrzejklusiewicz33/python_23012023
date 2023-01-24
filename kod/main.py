@@ -605,5 +605,37 @@
 # print(list2)
 
 
-#15. Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-10.
+# 15. Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-10.
 # Połącz te dwie listy do jednej i wyswietl na konsoli (extend albo *lista)
+
+# import random
+#
+# list1 = []
+# list2 = []
+# for x in range(10):
+#     list1.append(random.randint(1, 10))
+#     list2.append(random.randint(1, 10))
+#
+# result=[*list1,*list2]
+# print(result)
+# list1.extend(list2)
+# print(list1)
+#
+# lista=[]
+# for x in range(1,11):
+#     podlista=[x,x*100]
+#     lista.append(podlista)
+# print(lista)
+
+
+
+# lista=[]
+# for x in range(1,11):
+#     lista.append([x,x*100])
+# print(lista)
+# for e in lista:
+#     print(e)
+
+#16. Korzystajac z petli stworz liste zawierajaca elementy same bedace listami.
+# Kazdy taki element ma zawierac numer potegi oraz wartosc tej potegi dla liczby 2.
+#print(pow(2,10))
