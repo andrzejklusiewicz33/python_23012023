@@ -851,5 +851,83 @@
 #   id, imieniu,nazwisku, wzroscie,masie oraz obliczonym bmi zawodnika
 
 
-for r in [linia.strip().split(';') for linia in open('dane.csv',encoding="utf-8")]:
-    print(r[1],r[2],float(r[3])/2)
+#
+# for r in [linia.strip().split(';') for linia in open('dane.csv',encoding="utf-8")]:
+#     bmi=r[4]/pow(r[3],2) #nie zadziala bo brak rzutowania na liczbę (wartości są tekstem)
+#     print(*r,bmi)
+#
+# for r in [linia.strip().split(';') for linia in open('dane.csv',encoding="utf-8")]:
+#     bmi=float(r[4])/pow(float(r[3]),2)
+#     print(*r,bmi)
+#
+# for r in [linia.strip().split(';') for linia in open('dane.csv',encoding="utf-8")]:
+#     bmi=round(float(r[4])/pow(float(r[3]),2),2)
+#     print(*r,bmi)
+
+#
+# for r in [linia.strip().split(';') for linia in open('dane.csv',encoding="utf-8")]:
+#     print(*r,round(float(r[4])/pow(float(r[3]),2),2))
+
+# for r in [linia.strip().split(';') for linia in open('dane.csv',encoding="utf-8")]:
+#     r.append(round(float(r[4])/pow(float(r[3]),2),2))
+#     print(*r)
+#
+# lista=[1,6,32,2,3,55,4]
+# print(lista)
+# lista.sort()
+# print(lista)
+
+#
+# lista=[1,6,32,2,3,55,4]
+# print(lista)
+# lista.sort()
+# lista.reverse()
+# print(lista)
+
+#
+# lista=[1,6,32,2,3,55,4]
+# print(lista)
+# lista.sort(reverse=True)
+# print(lista)
+
+
+# lista=[1,6,32,2,3,55,4]
+# print(sorted(lista))
+# print(lista)
+
+# lista=[1,6,32,2,3,55,4]
+# print(sorted(lista,reverse=True))
+# print(lista)
+#
+# lista=[1,6,32,2,3,55,4]
+# posortowane=sorted(lista)
+# print(lista)
+# print(posortowane)
+
+
+# lista=[1,6,32,2,3,55,4]
+# posortowane=sorted(lista,reverse=True)
+# print(lista)
+# print(posortowane)
+
+
+# lista=[1,6,32,2,3,55,4]
+# posortowane=sorted(lista)
+# odwrocone_posortowane=list(reversed(posortowane))
+# print(lista)
+# print(posortowane)
+# print(odwrocone_posortowane)
+#
+# lista=['C','A','B']
+# print(sorted(lista))
+# lista.sort()
+# print(lista)
+
+#
+# lista=['C','A','B','1']
+# print(sorted(lista))
+# lista.sort()
+# print(lista)
+
+#22.Wygeneruj listę 10 elementów o losowej wartości liczbowej,
+# posortuj listę (malejąco) i wyświetl jej zawartość linia po linii
