@@ -1014,7 +1014,71 @@
 #     print(d)
 
 #24. Wyświetl na konsoli linia po linii dane z pliku dane.csv ale posortowane  malejąco wg. bmi
+#
+# data=[line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]
+# for d in data:
+#     bmi=round(float(d[4])/pow(float(d[3]),2),2)
+#     d.append(bmi)
+#     print(d)
 
-data=[line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]
-for d in data:
-    d.append(bmi)
+
+# data=[line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]
+# for d in data:
+#     d.append(round(float(d[4])/pow(float(d[3]),2),2))
+# data.sort(key=lambda e:e[5],reverse=True)
+# for d in data:
+#     print(d)
+
+#
+# import os
+# os.mkdir("d:\\whatever")
+
+# import os
+# for e in os.walk('d:\\'):
+#     print(e)
+#
+# import os
+# for e in os.walk('d:\\'):
+#     print(e[0])
+
+#
+# import os
+# for e in os.walk('d:\\'):
+#     print(e)
+
+#
+# import os
+# for e in os.walk('d:\\'):
+#     print(f"########  KATALOG {e[0]}:")
+#     for k in e[1]:
+#         print(f'podkatalog {k}')
+#     for p in e[2]:
+#         print(f'plik {p}')
+
+# string="siała baba mak"
+# if "baba" in string:
+#     print('jest w stringu')
+# else:
+#     print('nie ma w stringu')
+#
+# lista=string.split()
+# print(lista)
+# if "bab" in lista:
+#     print('jest w liście')
+# else:
+#     print('nie ma w liście')
+#
+# for e in lista:
+#     if 'bab' in e:
+#         print(f'jest w {e}')
+#     else:
+#         print(f'nie ma w {e}')
+
+#25. Napisz wyszukiwarkę plików która przyjmie od użytkownika szukaną frazę i katalog startowy.
+# Wyszukiwarka ma wyswietlić wszystkie pliki i katalogi zawierajace w nazwie szukaną
+# frazę - wraz ze ścieżkami. Wyszukiwarka ma być nieczuła na wielkość liter
+
+
+import os
+for e in os.walk('e:\\'):
+    print(e)
