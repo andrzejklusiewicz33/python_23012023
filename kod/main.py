@@ -996,3 +996,25 @@
 
 #23. Wczytaj do listy kolejne wiersze z pliku dane.csv.
 # Dane posortuj po nazwiskach i wyswietl linia po linii na konsoli.
+
+# data=[line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]
+# for d in data:
+#     print(d)
+#
+# data=[line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]
+# data.sort(key=lambda e:e[2])
+# for d in data:
+#     print(d)
+
+
+# from operator import itemgetter
+# data=[line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]
+# data.sort(key=itemgetter(2))
+# for d in data:
+#     print(d)
+
+#24. Wyświetl na konsoli linia po linii dane z pliku dane.csv ale posortowane  malejąco wg. bmi
+
+data=[line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]
+for d in data:
+    d.append(bmi)
