@@ -1221,3 +1221,37 @@
 # Napisz kod który zwróci do postaci listy krotek zawartość tego pliku z danymi bez powtórek.
 
 #unhashable type list -- brakuje rzutowania elementów listy na krotki
+
+#
+# result=list(set([tuple(e.strip().split(';')) for e in open('dane.csv',encoding='utf-8')]))
+# print(result)
+# for r in result:
+#     print(r,type(r))
+
+#przerwa do 14:23
+
+#
+# sl=dict()
+# sl['string']='value 1'
+# sl['numeric']=1234
+# sl['list']=[1,2,3,4]
+#
+# #print(sl['numeric'])
+#
+# for k in sl:
+#     print(k,sl[k])
+#
+# for k in sl.keys():
+#     print(k,sl[k])
+#
+# for v in sl.values():
+#     print(v)
+
+
+#30. Stwórz plik ustawienia.conf i umieść w nim poniższe dane
+# encoding;utf-8
+# timezone;-2
+# color;black
+# Następnie wczytaj dane do słownika w ten sposób by pierwsza kolumna stanowila
+# klucze a druga przypisane do nich
+# wartości. Przeiteruj po słowniku i wypisz klucze oraz przypisane do nich wartości
