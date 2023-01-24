@@ -931,3 +931,68 @@
 
 #22.Wygeneruj listę 10 elementów o losowej wartości liczbowej,
 # posortuj listę (malejąco) i wyświetl jej zawartość linia po linii
+
+# import random
+# result=[random.randint(1,100) for e in range(10)]
+# print(result)
+# print(sorted(result,reverse=True))
+# result.sort(reverse=True)
+# print(result)
+#
+# import random
+# result=[random.randint(1,100) for e in range(10)]
+# result.sort()
+# result.reverse() #większa złożonośc obliczeniowa w stosunku do .sort(reseversed=True)
+# print(result)
+
+#przerwa do 11:27
+#
+# lista=[
+#     [2,'C'],
+#     [1,'D'],
+#     [3,'B'],
+#     [4,'A']
+# ]
+# lista.sort()
+# print(lista)
+
+#from operator import itemgetter
+# lista=[
+#     [2,'C'],
+#     [1,'D'],
+#     [3,'B'],
+#     [4,'A']
+# ]
+# lista.sort(key=itemgetter(1))
+# print(lista)
+
+#
+# lista=[
+#     [2,'C'],
+#     [1,'D'],
+#     [3,'B'],
+#     [4,'A']
+# ]
+# lista.sort(key=lambda e:e[1])
+# print(lista)
+
+
+# class Person:
+#     first_name=None
+#     last_name=None
+#     def __init__(self,fn,ln):
+#         self.first_name=fn
+#         self.last_name=ln
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# p1=Person('Andrzej','Klusiewicz')
+# p2=Person('Natalia','Gmurczyk')
+# p3=Person('Monika','Bożko')
+# list=[p1,p2,p3]
+# list.sort(key=lambda p:p.last_name)
+# for e in list:
+#     print(e)
+
+#23. Wczytaj do listy kolejne wiersze z pliku dane.csv.
+# Dane posortuj po nazwiskach i wyswietl linia po linii na konsoli.
