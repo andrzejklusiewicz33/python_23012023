@@ -1077,8 +1077,64 @@
 #25. Napisz wyszukiwarkę plików która przyjmie od użytkownika szukaną frazę i katalog startowy.
 # Wyszukiwarka ma wyswietlić wszystkie pliki i katalogi zawierajace w nazwie szukaną
 # frazę - wraz ze ścieżkami. Wyszukiwarka ma być nieczuła na wielkość liter
+#
+# szukane="OrAcLe"
+# import os
+# for e in os.walk('e:\\'):
+#     katalogi=e[1]
+#     for k in katalogi:
+#         if szukane.lower() in k.lower():
+#             print(e[0],k)
 
 
-import os
-for e in os.walk('e:\\'):
-    print(e)
+# szukane="OrAcLe"
+# import os
+# for e in os.walk('e:\\'):
+#     for k in e[1]:
+#         if szukane.lower() in k.lower():
+#             print(os.path.join(e[0],k))
+#     for p in e[2]:
+#         if szukane.lower() in p.lower():
+#             print(os.path.join(e[0],p))
+
+# import os
+# szukane=input('podaj szukaną frazę:\n')
+# katalog_startowy=input('podaj katalog startowy:\n')
+# for e in os.walk(katalog_startowy):
+#     for k in e[1]:
+#         if szukane.lower() in k.lower():
+#             print(os.path.join(e[0],k))
+#     for p in e[2]:
+#         if szukane.lower() in p.lower():
+#             print(os.path.join(e[0],p))
+
+#przerwa obiadowa do 13:10
+
+# lista=[1,2,3]
+# krotka=(1,2,3)
+# print(lista[1])
+# print(krotka[1])
+# lista.append(4)
+# krotka.append(4) #nie ma
+
+# krotka=(5,4,1,6,2)
+# #krotka.sort() #nie ma
+# print(sorted(krotka))
+# posortowane=sorted(krotka)
+# print(posortowane)
+
+# krotka=(5,4,1,6,2)
+# lista=list(krotka)
+# print(lista,type(lista))
+# krotka2=tuple(lista)
+# print(krotka2,type(krotka2))
+#
+# krotka=(5,4,1,6,2)
+# lista=list(krotka)
+# lista.sort()
+# krotka=tuple(lista)
+# print(krotka)
+
+#26. Stwórz dwie krotki. Jedna ma zawierać 10 losowych liczb zakresu 1-10,
+# druga 10 losowych liczb zakresu 11-20. Stwórz trzecią krotkę która ma zawierać dane z obu krotek.
+# Trzecią krotkę wypisz na konsoli
