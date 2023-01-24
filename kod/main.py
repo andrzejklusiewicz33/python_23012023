@@ -1283,3 +1283,61 @@
 # Przeiteruj po slowniku i wyswietl jego zawartość.
 
 #print(sl['ANDRZEJ KLUSIEWICZ'])
+
+# def get_data():
+#     return [e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+#
+# for d in get_data():
+#     print(d)
+#
+# sl=dict()
+# data=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# for d in data:
+#     key=d[1].upper()+" "+d[2].upper()
+#     sl[key]=d
+#
+# for k in sl:
+#     print(k,sl[k])
+
+#
+# sl=dict()
+# for d in [e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]: sl[d[1].upper()+" "+d[2].upper()]=d
+# for k in sl: print(k,sl[k])
+#
+# result=[ [e,pow(2,e)] for e in range(1,11)]
+# print(result)
+#
+# for r in result:
+#     print(r)
+# print('----------------')
+# print(result[3])
+# poz=result[3]
+# print(poz[1])
+# print(result[3][1])
+
+#pandas, scikitlearn
+
+#import matplotlib.pyplot
+
+#32. Napisz system który zwróci nam ilość wystąpień każdego ze słow w pliku w postaci listy krotek.
+# [  (slowo,ilosc_wystapien),(slowo,ilosc_wystapien)   ]. Nazwa pliku ma zostać przekazana przez zmienną.
+#    Wynik powinien byc posortowany malejąco wg ilosci wystapien
+#    a) odczytaj wszystkie linie z pliku i rozbij na słowa. Każde ze słów dodaj do osobnej listy.
+#       Zadbaj o usunięcie po drodze znaków specjalnych czyli kropek, przecinków, wykrzykników etc.
+#    b) stwórz słownik i dla każdego słowa w liście sprawdz czy istnieje juz wpis dotyczący tego słowa
+#       w słowniku. Jeśli nie ma to dodaj do słownika wpis o kluczu takim jak sprawdzane słowo i wartości 1
+#       dla ilości wystąpień. Jeśli takie słowo pojawia się już w kluczach słownika to trzeba zwiększyc wartośc o 1
+#    c) Przepakuj dane ze słownika do listy i posortuj.
+#
+
+#Tadeusz 354
+#Litwa 255
+#Helena 155
+
+#Tadeusz
+#Tadeusz.
+#Tadeusz,
+#Tadeusz!
+
+string="baba baba baba"
+print(string.count('baba'))
