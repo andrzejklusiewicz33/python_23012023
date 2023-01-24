@@ -1149,4 +1149,45 @@
 
 #27. Napisz kod ktora wyświetli w postaci listy krotek zawartość pliku dane.csv
 
+# result=[line.strip().split(';') for line in open('dane.csv',encoding='utf-8')]
+# for r in result:
+#     print(r)
 
+
+#
+# result=[tuple(line.strip().split(';')) for line in open('dane.csv',encoding='utf-8')]
+# for r in result:
+#     print(r)
+
+
+#for r in [tuple(line.strip().split(';')) for line in open('dane.csv',encoding='utf-8')]: print(r)
+
+# z={1,1,1,1,1,1,1,5,5,5,5,5,5,5,5,2,2,2,2,2,2,3,3,3,3,3,3,3,3}
+# print(z)
+#
+# z1={1,2,3,4}
+# z2={3,4,5,6}
+# print(z1.intersection(z2))
+# print(z1.union(z2))
+# print(z1.difference(z2))
+# print(z2.difference(z1))
+
+# lista=[1,2,1,1,1,2,2,2,2,2,3,4,1,1,2,2,3,3,4]
+# z=set(lista)
+# print(z)
+# lista=list(z)
+# print(lista)
+
+# z=set()
+# z.add(1)
+# z.add(1)
+# z.add(1)
+# z.add(2)
+# print(z)
+#
+# lista=list(set([1,2,1,1,1,2,2,2,2,2,3,4,1,1,2,2,3,3,4]))
+# print(lista)
+
+#28. Wygeneruj dwa zestawy, dodaj do nich po 20
+# (w przypadku duplikatów lista może być mniejsza niż 20 elementów)
+# losowych liczb z zakresu 1-40. Wyswietl ich sumę, różnicę i część wspólną
