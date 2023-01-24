@@ -518,7 +518,7 @@
 # for e in my_list:
 #     print(e)
 
-#13. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
+# 13. Napisz kod który umieści w liście 10 kolejnych potęg liczby 2.
 # Następnie przeiteruj po tej liście i każdy z jej elementów wyświetl na konsoli w osobnej linii.
 #
 # my_list=[]
@@ -529,11 +529,81 @@
 #     print(ml)
 #
 # for f in [pow(2,e) for e in range(1,11)]: print(f)
+#
+# my_list = [1, 5, 22, 2, 33, 190, -89]
+# print(max(my_list))
+# print(min(my_list))
+# print(sum(my_list))
+# print(sum(my_list) / len(my_list))
 
-my_list=[1,5,22,2,33,190,-89]
-print(max(my_list))
-print(min(my_list))
-print(sum(my_list))
-print(sum(my_list)/len(my_list))
+# 14. Stwórz listę zawierającą 100 losowych liczb z zakresu dowolnego
+# i wyświetl różnicę pomiędzy największą a najmniejszą wartością w tej liście...
 
-#14. Stwórz listę zawierającą 100 losowych liczb i wyświetl różnicę pomiędzy największą a najmniejszą wartością w tej liście...
+# import random
+# my_list=[]
+# for x in range(100):
+#     my_list.append(random.randint(1,100))
+# print(max(my_list)-min(my_list),max(my_list),min(my_list))
+#
+# import random
+# my_list=[random.randint(1,100) for x in range(100)]
+# print(max(my_list)-min(my_list),max(my_list),min(my_list))
+#
+# import random
+# print(random.random()*1000)
+
+# my_list=[1,2,3]
+# print(my_list)
+# print(*my_list)
+#
+# def function(*args):
+#     pass
+#
+# function(1,2,3,4)
+# function(*my_list)
+
+# list1=[1,2,3,4]
+# list2=[5,6,7,8]
+# result=[list1,list2]
+# print(result)
+# result=[*list1,*list2]
+# print(result)
+
+
+# list1=[1,2,3,4]
+# list2=[5,6,7,8]
+# result=[]
+# result.append(list1)
+# result.append(list2)
+# print(result)
+
+# list1=[1,2,3,4]
+# list2=[5,6,7,8]
+# result=[]
+# result.extend(list1)
+# result.extend(list2)
+# print(result)
+
+#
+# list1=[1,2,3,4]
+# list2=[5,6,7,8]
+# list1.extend(list2)
+# print(list1)
+
+
+# list1=[1,2,3,4]
+# list2=list1
+# list1.clear()
+# print(list1)
+# print(list2)
+
+#
+# list1=[1,2,3,4]
+# list2=list1.copy()
+# list1.clear()
+# print(list1)
+# print(list2)
+
+
+#15. Stwórz dwie listy. Każda z list ma zawierać 10 liczb losowych z zakresu 1-10.
+# Połącz te dwie listy do jednej i wyswietl na konsoli (extend albo *lista)
