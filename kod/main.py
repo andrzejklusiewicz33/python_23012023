@@ -1479,3 +1479,68 @@
 # dla   któregoś wiersza chcemy go zapisać (cały wiersz)
 # w osobnym pliku bledy.csv wzbogacony o informację o rodzaju błędu
 #4;Andrzej;1,89;90;IOERROR
+
+
+# for d in [e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]:
+#     try:
+#         bmi=round(float(d[4])/pow(float(d[3]),2),2)
+#         print(*d,bmi)
+#     except ValueError as e :
+#         with open('errors.log',encoding="utf-8",mode="w") as file:
+#             file.write(";".join(d)+f"ValueError - {e}\n")
+            #file.write(f"{d[0]};{d[1]};{d[2]};{d[3]};{d[4]};ValueError - {e}\n")
+
+
+#DRY
+
+#przerwa obiadowa do 13:00
+#
+# def komendant():
+#     print('jeb z granatnika ;)')
+#
+# komendant()
+
+# def dodaj(a,b):
+#     print(a+b)
+#
+# dodaj(10,30)
+
+# def odejmij(a,b):
+#     return a-b
+
+# def odejmij(a,b):
+#     wynik=a-b
+#     return wynik
+#
+#
+# wynik=odejmij(40,10)
+# print(wynik)
+#
+# print(odejmij(30,12))
+
+# def odejmij(a,b):
+#     wynik=a-b
+#     return wynik
+#     print('nie nastąpi nigdy....')
+#
+# wynik=odejmij(40,10)
+# print(wynik)
+#
+# print(odejmij(30,12))
+
+#
+# def typ(x):
+#     if x>0:
+#         return "dodatnia"
+#     elif x==0:
+#         return "zero"
+#     else:
+#         return "ujemna"
+#
+#
+# print(typ(1))
+# print(typ(0))
+# print(typ(-1))
+
+#36. Stwórz funkcję która przyjmie wzrost i masę a zwróci zaokraglone do 2 miejsc po przecinku BMI.
+# W przypadku pojawienia się wyjątku, wyświetl na konsoli jaki wystąpił problem a z funkcji zwróć -1.
