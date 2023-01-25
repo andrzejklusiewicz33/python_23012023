@@ -1588,3 +1588,31 @@
 #37. Napisz funkcję która zwróci pod postacią listy krotek zawartość pliku
 #   którego nazwę przekażemy przez pierwszy argument funkcji. Plik ma być otwarty z kodowaniem
 #   podanym jako drugi argument funkcji. Jeśli kodowanie nie zostanie podane ma przyjac utf-8
+
+# data=[e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
+# for d in data:
+#     print(d)
+
+# def get_data(file_name,enc="utf-8",divisor=";"):
+#     return [e.strip().split(divisor) for e in open(file_name,encoding=enc)]
+
+# data=get_data('dane.csv')
+# for d in data:
+#     print(d)
+
+# data=get_data('dane.csv',divisor=';',enc='utf-8')
+# for d in data:
+#     print(d)
+
+# for d in get_data('dane.csv',divisor=';',enc='utf-8'):
+#     print(d)
+
+
+#38. Napisz funkcję która bedzie w stanie przyjąć taką listę jaka jest zwracana
+ # przez funkcję z poprzedniego ćwiczenia. Funkcja ta ma przeiterować po otrzymanej
+ # liście i wyświetlić każdy element na konsoli. Odbierz dane z funkcji z ćwiczenia
+ # poprzedniego i przekaz do nowo powstalej funkcji.
+
+def get_data(file_name,enc="utf-8",divisor=";"):
+    return [e.strip().split(divisor) for e in open(file_name,encoding=enc)]
+
