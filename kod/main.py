@@ -1359,24 +1359,30 @@
 # else:
 #     print('nie ma')
 
-import time
-start=time.time()
-file_name='tadzio.txt'#input('podaj nazwę pliku do analizy:\n')
-all=open(file_name,encoding="utf-8").read().lower()
-not_wanted=['»', '«', ':', '/', '-', '—', '.', ';', '(', '…', '!', ')', ',', '?', '*']
-for nw in not_wanted:
-    all=all.replace(nw,'')
-words=all.split()
-dt=dict()
-for w in words:
-    if w in dt:
-        dt[w]+=1
-    else:
-        dt[w]=1
-for k in dt:
-    print(k,dt[k])
-end=time.time()
-print(f"Czas trwania={end-start}s")
+# import time
+# start=time.time()
+# file_name='tadzio.txt'#input('podaj nazwę pliku do analizy:\n')
+# all=open(file_name,encoding="utf-8").read().lower()
+# not_wanted=['»', '«', ':', '/', '-', '—', '.', ';', '(', '…', '!', ')', ',', '?', '*']
+# for nw in not_wanted:
+#     all=all.replace(nw,'')
+# words=all.split()
+# dt=dict()
+# for w in words:
+#     if w in dt:
+#         dt[w]+=1
+#     else:
+#         dt[w]=1
+# result=[]
+# for k in dt:
+#     result.append( (k,dt[k])  )
+# result.sort(key=lambda x:x[1],reverse=True)
+# for e in result:
+#     print(e)
+# end=time.time()
+# print(f"Czas trwania={end-start}s")
+
+#lista.sort(key=itemgetter(1), reverse=True)
 
 #print(len(words),pow(len(words),2))
 #Wiosna
@@ -1400,3 +1406,7 @@ print(f"Czas trwania={end-start}s")
 
 # string="baba baba baba"
 # print(string.count('baba'))
+
+#przerwa do 11:38
+
+#33.Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10.
