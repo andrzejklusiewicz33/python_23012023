@@ -1346,7 +1346,12 @@
 #jeśli nie występuje to ustanawiamy nowy klucz taki jak to słowo z wartością 1
 #Iteracja w pętli po zawartości słownika
 #wypisanie pary klucz-wartość
-#
+#C
+#Stworzenie pustej listy -czyli naszej docelowej listy krotek
+#Iteracja w pętli po wszystkich kluczach słownika
+#Dla każdego klucza dodanie do listy docelowej krotki która będzie zawierała klucz (czyli słowo) i wartość dla tego klucza (ilość wystąpień)
+#Sortowanie malejące naszej listy docelowej wg. liczby wystąpień (druga kolumna krotki)
+#Iteracja po liście docelowej i wyświetlanie jej elementów
 # sl=dict()
 # sl['key1']='value 1'
 # if 'key2' in sl:
@@ -1362,8 +1367,14 @@ not_wanted=['»', '«', ':', '/', '-', '—', '.', ';', '(', '…', '!', ')', ',
 for nw in not_wanted:
     all=all.replace(nw,'')
 words=all.split()
+dt=dict()
 for w in words:
-    x=words.count(w)
+    if w in dt:
+        dt[w]+=1
+    else:
+        dt[w]=1
+for k in dt:
+    print(k,dt[k])
 end=time.time()
 print(f"Czas trwania={end-start}s")
 
