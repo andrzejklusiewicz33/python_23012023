@@ -1341,7 +1341,9 @@
 #Wiosna
 #wiosna
 
-
+# import re
+# tekst="siała !!!???...,,,"
+# print(list(set(re.findall("\W",tekst))))
 
 #Tadeusz 354
 #Litwa 255
