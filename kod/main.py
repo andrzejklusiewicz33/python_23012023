@@ -1696,3 +1696,27 @@
 #40.Stwórz pakiet zawierający moduł który bedzie zawierał funkcję przyjmującą wzrost i masę a zwracającą bmi.
 # Zaimportuj i wywołaj tę funkcję w taki sposób by przy jej wywołaniu nie trzeba było  podawać nazwy pakietu ani modułu.
 
+# from tools.body import get_bmi
+# print(get_bmi(1.76,72))
+
+#TKINTER
+#EASYGUI
+
+# import requests
+# response=requests.get('https://jsystems.pl/static/blog/python/dane.json')
+# print(response.status_code)
+# if response.status_code==200:
+#     print('ok')
+#     data=response.json()
+#     print(data)
+#     print(data['nazwisko'])
+#     print(data['adres'])
+#     adres=data['adres']
+#     print(adres['miasto'])
+#     print(data['adres']['miasto'])
+#     print(data['jezyki'])
+#     for j in data['jezyki']:
+#         print(j)
+
+#41. z usługi sieciowej http://jsystems.pl/Universe/samaTabelka.do pobierz informację o szkoleniach.
+# na konsoli wyswietl tytuly, miasta i daty wszystkich szkolen które w tytule mają malymi badz duzymi   literami "Docker"
