@@ -1651,7 +1651,6 @@
 # print(idao.get_all())
 # print(ldao.get_all())
 
-from invoice_dao import *
 # from lead_dao import *
 # print(get_all())
 
@@ -1664,9 +1663,36 @@ from invoice_dao import *
 #39. Funkcje z dwóch ostatnich ćwiczeń (poniżej) przenieś do osobnego modułu.
 #Następnie zaimportuj je i dane odczytane z funkcji get_data przekaz do funkcji print_data
 
-def get_data(file_name,enc="utf-8",divisor=";"):
-    return [e.strip().split(divisor) for e in open(file_name,encoding=enc)]
+# def get_data(file_name,enc="utf-8",divisor=";"):
+#     return [e.strip().split(divisor) for e in open(file_name,encoding=enc)]
+#
+# def print_data(data):
+#     for d in data:
+#         print(d)
+#
+# import csv_tools as ct
+# ct.print_data( ct.get_data('dane.csv') )
 
-def print_data(data):
-    for d in data:
-        print(d)
+
+#przerwa do 14:26
+
+#
+# import dao.invoice_dao
+# print(dao.invoice_dao.get_all())
+
+#
+# import dao.invoice_dao as idao
+# print(idao.get_all())
+
+#from dao.invoice_dao import  *
+#print(get_all())
+# import dao.invoice_dao
+# import invoice_dao
+
+#import this
+
+#import dao.invoice_dao
+
+#40.Stwórz pakiet zawierający moduł który bedzie zawierał funkcję przyjmującą wzrost i masę a zwracającą bmi.
+# Zaimportuj i wywołaj tę funkcję w taki sposób by przy jej wywołaniu nie trzeba było  podawać nazwy pakietu ani modułu.
+
