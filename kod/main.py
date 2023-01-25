@@ -1324,11 +1324,24 @@
 #    Wynik powinien byc posortowany malejąco wg ilosci wystapien
 #    a) odczytaj wszystkie linie z pliku i rozbij na słowa. Każde ze słów dodaj do osobnej listy.
 #       Zadbaj o usunięcie po drodze znaków specjalnych czyli kropek, przecinków, wykrzykników etc.
+#    MAMY LISTĘ SŁÓW Z POWTÓRZENIAMI BEZ ZNAKÓW SPECJALNYCH I O JEDNOLITEJ WIELKOSCI LITER
 #    b) stwórz słownik i dla każdego słowa w liście sprawdz czy istnieje juz wpis dotyczący tego słowa
 #       w słowniku. Jeśli nie ma to dodaj do słownika wpis o kluczu takim jak sprawdzane słowo i wartości 1
 #       dla ilości wystąpień. Jeśli takie słowo pojawia się już w kluczach słownika to trzeba zwiększyc wartośc o 1
 #    c) Przepakuj dane ze słownika do listy i posortuj.
 #
+
+#odebranie od użytkownika nazwy pliku do otwarcia
+#wciągnięcie całej zawartości pliku do zmiennej tekstowej
+#pomniejszenie/powiększenie calosci tekstu z pliku
+#definicja listy z niechcianymi znakami
+#dla każdego z niechcianych znaków podmiana tego znaku w tekscie z pliku na pusty ciag
+#za pomocą funkcji split() - otrzymujemy listę słów
+
+#Wiosna
+#wiosna
+
+
 
 #Tadeusz 354
 #Litwa 255
@@ -1339,5 +1352,5 @@
 #Tadeusz,
 #Tadeusz!
 
-string="baba baba baba"
-print(string.count('baba'))
+# string="baba baba baba"
+# print(string.count('baba'))
