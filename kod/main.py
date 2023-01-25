@@ -1331,12 +1331,21 @@
 #    c) Przepakuj dane ze słownika do listy i posortuj.
 #
 
+#A
 #odebranie od użytkownika nazwy pliku do otwarcia
 #wciągnięcie całej zawartości pliku do zmiennej tekstowej
 #pomniejszenie/powiększenie calosci tekstu z pliku
 #definicja listy z niechcianymi znakami
 #dla każdego z niechcianych znaków podmiana tego znaku w tekscie z pliku na pusty ciag
 #za pomocą funkcji split() - otrzymujemy listę słów
+#B
+#definicja słownika
+#przejście pętlą po liście słów
+#sprawdzenie czy dane słowo występuje jako klucz w słowniku
+#jeśli występuje to zwiększamy wartość dla tego klucza o 1
+#jeśli nie występuje to ustanawiamy nowy klucz taki jak to słowo z wartością 1
+#Iteracja w pętli po zawartości słownika
+#wypisanie pary klucz-wartość
 #
 # sl=dict()
 # sl['key1']='value 1'
