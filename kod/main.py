@@ -1544,3 +1544,47 @@
 
 #36. Stwórz funkcję która przyjmie wzrost i masę a zwróci zaokraglone do 2 miejsc po przecinku BMI.
 # W przypadku pojawienia się wyjątku, wyświetl na konsoli jaki wystąpił problem a z funkcji zwróć -1.
+
+# def bmi(w,m):
+#     try:
+#         return round(m/pow(w,2),2)
+#     except ZeroDivisionError:
+#         print('podałeś zerowy wzrost')
+#         return -1
+#
+# print(bmi(1.76,72))
+# print(bmi(0,72))
+#
+# def witacz(imie,nazwisko):
+#     print(f'Witaj {imie} {nazwisko}!')
+#
+# witacz('Andrzej','Klusiewicz')
+# witacz('Andrzej')
+
+#
+# def witacz(imie,nazwisko="nie podano"):
+#     print(f'Witaj {imie} {nazwisko}!')
+#
+# witacz('Andrzej','Klusiewicz')
+# witacz('Andrzej')
+# witacz(imie='Andrzej')
+
+#w Pythonie nie ma przeciążania
+# def witacz(a):
+#     pass
+#
+# def witacz(a,b):
+#     pass
+#
+# witacz('xxxx')
+
+# def witacz(nazwisko="nie podano",imie): #fuuuuu
+#     print(f'Witaj {imie} {nazwisko}!')
+#
+# witacz('Andrzej','Klusiewicz')
+# witacz('Andrzej')
+#
+
+#37. Napisz funkcję która zwróci pod postacią listy krotek zawartość pliku
+#   którego nazwę przekażemy przez pierwszy argument funkcji. Plik ma być otwarty z kodowaniem
+#   podanym jako drugi argument funkcji. Jeśli kodowanie nie zostanie podane ma przyjac utf-8
