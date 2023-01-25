@@ -1613,6 +1613,60 @@
  # liście i wyświetlić każdy element na konsoli. Odbierz dane z funkcji z ćwiczenia
  # poprzedniego i przekaz do nowo powstalej funkcji.
 
+# def get_data(file_name,enc="utf-8",divisor=";"):
+#     return [e.strip().split(divisor) for e in open(file_name,encoding=enc)]
+#
+# def print_data(data):
+#     for d in data:
+#         print(d)
+#
+# my_data=get_data('dane.csv')
+# print_data(my_data)
+#
+# print_data(  get_data('dane.csv')  )
+
+# import my_module
+# my_module.lol()
+# my_module.omg()
+#
+# import my_module as mm
+# mm.lol()
+# mm.omg()
+
+# def omg():
+#     print('lokalna funkcja')
+#
+# from my_module import omg
+# omg()
+
+
+# from my_module import omg,lol
+# omg()
+#
+# from my_module import *
+# omg()
+
+# import invoice_dao as idao
+# import lead_dao as ldao
+# print(idao.get_all())
+# print(ldao.get_all())
+
+from invoice_dao import *
+# from lead_dao import *
+# print(get_all())
+
+#
+# import invoice_dao
+# import lead_dao
+# print(invoice_dao.get_all())
+# print(lead_dao.get_all())
+
+#39. Funkcje z dwóch ostatnich ćwiczeń (poniżej) przenieś do osobnego modułu.
+#Następnie zaimportuj je i dane odczytane z funkcji get_data przekaz do funkcji print_data
+
 def get_data(file_name,enc="utf-8",divisor=";"):
     return [e.strip().split(divisor) for e in open(file_name,encoding=enc)]
 
+def print_data(data):
+    for d in data:
+        print(d)
