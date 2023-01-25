@@ -1327,7 +1327,7 @@
 #    MAMY LISTĘ SŁÓW Z POWTÓRZENIAMI BEZ ZNAKÓW SPECJALNYCH I O JEDNOLITEJ WIELKOSCI LITER
 #    b) stwórz słownik i dla każdego słowa w liście sprawdz czy istnieje juz wpis dotyczący tego słowa
 #       w słowniku. Jeśli nie ma to dodaj do słownika wpis o kluczu takim jak sprawdzane słowo i wartości 1
-#       dla ilości wystąpień. Jeśli takie słowo pojawia się już w kluczach słownika to trzeba zwiększyc wartośc o 1
+#       dla ilości wystąpień. Jeśli takie słowo pojawia się już w kluczach słownika to trzeba zwiększyc wartośc o 1 dla tego klucza
 #    c) Przepakuj dane ze słownika do listy i posortuj.
 #
 
@@ -1337,7 +1337,28 @@
 #definicja listy z niechcianymi znakami
 #dla każdego z niechcianych znaków podmiana tego znaku w tekscie z pliku na pusty ciag
 #za pomocą funkcji split() - otrzymujemy listę słów
+#
+# sl=dict()
+# sl['key1']='value 1'
+# if 'key2' in sl:
+#     print('jest')
+# else:
+#     print('nie ma')
 
+import time
+start=time.time()
+file_name='tadzio.txt'#input('podaj nazwę pliku do analizy:\n')
+all=open(file_name,encoding="utf-8").read().lower()
+not_wanted=['»', '«', ':', '/', '-', '—', '.', ';', '(', '…', '!', ')', ',', '?', '*']
+for nw in not_wanted:
+    all=all.replace(nw,'')
+words=all.split()
+for w in words:
+    x=words.count(w)
+end=time.time()
+print(f"Czas trwania={end-start}s")
+
+#print(len(words),pow(len(words),2))
 #Wiosna
 #wiosna
 
@@ -1345,6 +1366,9 @@
 # tekst="siała !!!???...,,,"
 # print(list(set(re.findall("\W",tekst))))
 
+# import re
+# print(list(set( re.findall("\W",open('tadzio.txt',encoding='utf-8').read())  )))
+#https://blog.jsystems.pl/show_post/Wyra%C5%BCenia_regularne/
 #Tadeusz 354
 #Litwa 255
 #Helena 155
