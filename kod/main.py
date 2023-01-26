@@ -2006,3 +2006,37 @@
 
 #47. Stwórz klasę Zawodnik posiadającą pola wzrost i masa. Pola te mają być uzupełniane przy tworzeniu obiektu.
 # Dodaj do klasy metodę get_bmi która zwróci obliczone na podstawie pól BMI. Powołaj do życia obiekt tej klasy i wyświetl na konsoli obliczone BMI.
+#
+# class Player:
+#     def __init__(self,height,weight):
+#         self.height=height
+#         self.weight=weight
+#     def get_bmi(self):
+#         return round(self.weight/pow(self.height,2),2)
+#
+# p=Player(1.76,82)
+# print(p.get_bmi())
+
+#
+# class Player:
+#     def __init__(self,height,weight):
+#         if type(height) is int or type(height) is float:
+#             self.height=height
+#             self.weight=weight
+#         else:
+#             raise Exception('Wzrost musi być wartością liczbową')
+#     def get_bmi(self):
+#         return round(self.weight/pow(self.height,2),2)
+#
+# p=Player(1.76,82)
+# print(p.get_bmi())
+
+
+#48. Stwórz plik konfiguracyjny z zawartością:
+encoding=utf-8
+timezone=-2
+color=black
+# Stwórz klasę Ustawienia która będzie posiadała słownik jako pole.
+# Niech każdy obiekt klasy ustawienia podczas jego tworzenia wczytuje do tego słownika zawartość pliku konfiguracyjnego w taki sposób,
+# by pierwsza kolumna stanowiła klucze dla słownika a druga wartości.
+#Po stworzeniu obiektu wydrukuj zawartosc slownika z obiektu na konsoli
