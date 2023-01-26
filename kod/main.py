@@ -2090,11 +2090,59 @@
 
 #49. Przesłoń metodę "__str__" w klasie "Samochod". Stwórz obiekt tej klasy i wyswietl jego zawartość na konsoli korzystając z __str__
 
+#
+# class Samochod:
+#     def __init__(self,marka,model,rejestracja):
+#         self.marka=marka
+#         self.model=model
+#         self.rejestracja=rejestracja
+#     def __str__(self):
+#         return f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}'
+#
+# s=Samochod('BMW',"M3",'ABC 12345')
+# print(s)
 
-class Samochod:
-    def __init__(self,marka,model,rejestracja):
-        self.marka=marka
-        self.model=model
-        self.rejestracja=rejestracja
-    def wyswietl(self):
-        print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+#
+# class Samochod:
+#     def __init__(self,marka,model,rejestracja):
+#         self.marka=marka
+#         self.model=model
+#         self.rejestracja=rejestracja
+#     def __str__(self):
+#         return f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}'
+#
+# s=Samochod('BMW',"M3",'ABC 12345')
+# print(s.__dict__)
+
+
+# class Samochod:
+#     def __init__(self,marka,model,rejestracja):
+#         self.marka=marka
+#         self.model=model
+#         self.rejestracja=rejestracja
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# s=Samochod('BMW',"M3",'ABC 12345')
+# print(s)
+
+
+#
+#
+# class Samochod:
+#     def __init__(self,marka,model,rejestracja):
+#         self.marka=marka
+#         self.model=model
+#         self.rejestracja=rejestracja
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# s=Samochod('A','B','C')
+# lista=[]
+# lista.append(s)
+# print(lista)
+# for e in lista:
+#     print(e)
+
+#50. Załaduj dane z pliku dane.csv do postaci listy obiektów.
+# Następnie przeiteruj po tej liście i wyświetl zawartość każdego z obiektów
