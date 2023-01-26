@@ -1951,6 +1951,41 @@
 # Jej przykładowe wywołanie: s1.ustaw_wartosci(‘Renault’,’Kadjar’,’WE968RP’)
 # Stwórz obiekt, uzupelnij go danymi i wyswietl dane na konsoli
 
+#
+# class Samochod:
+#     marka=None
+#     model=None
+#     rejestracja=None
+#     def wyswietl(self):
+#         print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+#
+#     def ustaw_wartosci(self,marka,model,rejestracja):
+#         self.marka=marka
+#         self.model=model
+#         self.rejestracja=rejestracja
+#
+# s1=Samochod("Audi",'A4','WY 12345')
+# #s1.ustaw_wartosci("Audi",'A4','WY 12345')
+# s1.wyswietl()
+
+#
+#
+# class Person:
+#     first_name = None
+#     last_name = None
+#     def __init__(self,first_name,last_name):
+#         print('inicjalizacja')
+#         self.first_name=first_name
+#         self.last_name=last_name
+#     def introduce_yourself(self):
+#         print(f"Hello! I'm {self.first_name} {self.last_name}!")
+#
+#
+# p=Person("Andrzej","Klusiewicz")
+# p.introduce_yourself()
+
+#46. Dodaj do klasy Samochód konstruktor wymuszający ustawienie wartości wszystkich pól przy tworzeniu obiektu.
+# Stworz obiekt klasy samochod i wywolaj na nim metode wyswietl
 
 class Samochod:
     marka=None
@@ -1959,7 +1994,7 @@ class Samochod:
     def wyswietl(self):
         print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
 
-s1=Samochod()
-s1.marka='Renault'
-s1.model='Kardjar'
-s1.rejestracja='WY 12345'
+    def ustaw_wartosci(self,marka,model,rejestracja):
+        self.marka=marka
+        self.model=model
+        self.rejestracja=rejestracja
