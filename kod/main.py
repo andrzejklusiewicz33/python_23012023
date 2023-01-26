@@ -1908,3 +1908,58 @@
 #44. Stwórz klasę "Samochod" posiadającą pola "marka", "model", "rejestracja".
 # Klasa ta powinna zawierać też metodę "wyswietl" wypisującą dane z obiektu na konsoli. Stwórz dwa obiekty
 # tej klasy i korzystajac  z metody "wyświetl" wyswietl na konsoli ich zawartość.
+#
+# class Samochod:
+#     marka=None
+#     model=None
+#     rejestracja=None
+#     def wyswietl(self):
+#         print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+#
+# s1=Samochod()
+# s1.marka='Renault'
+# s1.model='Kardjar'
+# s1.rejestracja='WY 12345'
+#
+# s2=Samochod()
+# s2.marka="Czarny"
+# s2.model="Ciągnik"
+# s2.rejestracja="POJ 2400"
+#
+# s1.wyswietl()
+# s2.wyswietl()
+#
+# #przerwa do 11:36
+#
+# #
+# class Person:
+#     first_name = None
+#     last_name = None
+#     def introduce_yourself(self):
+#         print(f"Hello! I'm {self.first_name} {self.last_name}!")
+#
+#     def set_values(self,first_name,last_name):
+#         self.first_name=first_name
+#         self.last_name=last_name
+#
+# p1 = Person()
+# p1.set_values("Andrzej","Klusiewicz")
+# p1.introduce_yourself()
+
+
+#45. Zadbaj o to by klasa Samochod posiadała metodę pozwalającą ustawić wartości wszystkich pól.
+# Jej przykładowe wywołanie: s1.ustaw_wartosci(‘Renault’,’Kadjar’,’WE968RP’)
+# Stwórz obiekt, uzupelnij go danymi i wyswietl dane na konsoli
+
+
+class Samochod:
+    marka=None
+    model=None
+    rejestracja=None
+    def wyswietl(self):
+        print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
+
+s1=Samochod()
+s1.marka='Renault'
+s1.model='Kardjar'
+s1.rejestracja='WY 12345'
