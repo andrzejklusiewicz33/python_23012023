@@ -20,6 +20,9 @@ def show_employees():
 def about():
     return render_template("about.html",author=Author())
 
+@app.route('/about.json')
+def about_json():
+    return Author().serialize()
 
 @app.route("/fruit.json")
 def fruit_json():
