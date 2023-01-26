@@ -1217,10 +1217,10 @@
 # print("z2-z1=",z2.difference(z1))
 
 
-#29. Zduplikuj jeden z wierszy w pliku dane.csv.
+# 29. Zduplikuj jeden z wierszy w pliku dane.csv.
 # Napisz kod który zwróci do postaci listy krotek zawartość tego pliku z danymi bez powtórek.
 
-#unhashable type list -- brakuje rzutowania elementów listy na krotki
+# unhashable type list -- brakuje rzutowania elementów listy na krotki
 
 #
 # result=list(set([tuple(e.strip().split(';')) for e in open('dane.csv',encoding='utf-8')]))
@@ -1228,7 +1228,7 @@
 # for r in result:
 #     print(r,type(r))
 
-#przerwa do 14:23
+# przerwa do 14:23
 
 #
 # sl=dict()
@@ -1248,7 +1248,7 @@
 #     print(v)
 
 
-#30. Stwórz plik ustawienia.conf i umieść w nim poniższe dane
+# 30. Stwórz plik ustawienia.conf i umieść w nim poniższe dane
 # encoding;utf-8
 # timezone;-2
 # color;black
@@ -1277,12 +1277,12 @@
 # print(sl['encoding'])
 
 
-#31.Wczytaj do słownika dane z pliku dane.csv tak by kluczem było imię sklejone
+# 31.Wczytaj do słownika dane z pliku dane.csv tak by kluczem było imię sklejone
 # z nazwiskiem rozdzielone spacja (powiekszone do duzych liter),
 # a wartością cały wiersz jako krotka lub lista.
 # Przeiteruj po slowniku i wyswietl jego zawartość.
 
-#print(sl['ANDRZEJ KLUSIEWICZ'])
+# print(sl['ANDRZEJ KLUSIEWICZ'])
 
 # def get_data():
 #     return [e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]
@@ -1315,11 +1315,11 @@
 # print(poz[1])
 # print(result[3][1])
 
-#pandas, scikitlearn
+# pandas, scikitlearn
 
-#import matplotlib.pyplot
+# import matplotlib.pyplot
 
-#32. Napisz system który zwróci nam ilość wystąpień każdego ze słow w pliku w postaci listy krotek.
+# 32. Napisz system który zwróci nam ilość wystąpień każdego ze słow w pliku w postaci listy krotek.
 # [  (slowo,ilosc_wystapien),(slowo,ilosc_wystapien)   ]. Nazwa pliku ma zostać przekazana przez zmienną.
 #    Wynik powinien byc posortowany malejąco wg ilosci wystapien
 #    a) odczytaj wszystkie linie z pliku i rozbij na słowa. Każde ze słów dodaj do osobnej listy.
@@ -1331,27 +1331,27 @@
 #    c) Przepakuj dane ze słownika do listy i posortuj.
 #
 
-#A
-#odebranie od użytkownika nazwy pliku do otwarcia
-#wciągnięcie całej zawartości pliku do zmiennej tekstowej
-#pomniejszenie/powiększenie calosci tekstu z pliku
-#definicja listy z niechcianymi znakami
-#dla każdego z niechcianych znaków podmiana tego znaku w tekscie z pliku na pusty ciag
-#za pomocą funkcji split() - otrzymujemy listę słów
-#B
-#definicja słownika
-#przejście pętlą po liście słów
-#sprawdzenie czy dane słowo występuje jako klucz w słowniku
-#jeśli występuje to zwiększamy wartość dla tego klucza o 1
-#jeśli nie występuje to ustanawiamy nowy klucz taki jak to słowo z wartością 1
-#Iteracja w pętli po zawartości słownika
-#wypisanie pary klucz-wartość
-#C
-#Stworzenie pustej listy -czyli naszej docelowej listy krotek
-#Iteracja w pętli po wszystkich kluczach słownika
-#Dla każdego klucza dodanie do listy docelowej krotki która będzie zawierała klucz (czyli słowo) i wartość dla tego klucza (ilość wystąpień)
-#Sortowanie malejące naszej listy docelowej wg. liczby wystąpień (druga kolumna krotki)
-#Iteracja po liście docelowej i wyświetlanie jej elementów
+# A
+# odebranie od użytkownika nazwy pliku do otwarcia
+# wciągnięcie całej zawartości pliku do zmiennej tekstowej
+# pomniejszenie/powiększenie calosci tekstu z pliku
+# definicja listy z niechcianymi znakami
+# dla każdego z niechcianych znaków podmiana tego znaku w tekscie z pliku na pusty ciag
+# za pomocą funkcji split() - otrzymujemy listę słów
+# B
+# definicja słownika
+# przejście pętlą po liście słów
+# sprawdzenie czy dane słowo występuje jako klucz w słowniku
+# jeśli występuje to zwiększamy wartość dla tego klucza o 1
+# jeśli nie występuje to ustanawiamy nowy klucz taki jak to słowo z wartością 1
+# Iteracja w pętli po zawartości słownika
+# wypisanie pary klucz-wartość
+# C
+# Stworzenie pustej listy -czyli naszej docelowej listy krotek
+# Iteracja w pętli po wszystkich kluczach słownika
+# Dla każdego klucza dodanie do listy docelowej krotki która będzie zawierała klucz (czyli słowo) i wartość dla tego klucza (ilość wystąpień)
+# Sortowanie malejące naszej listy docelowej wg. liczby wystąpień (druga kolumna krotki)
+# Iteracja po liście docelowej i wyświetlanie jej elementów
 # sl=dict()
 # sl['key1']='value 1'
 # if 'key2' in sl:
@@ -1382,11 +1382,11 @@
 # end=time.time()
 # print(f"Czas trwania={end-start}s")
 
-#lista.sort(key=itemgetter(1), reverse=True)
+# lista.sort(key=itemgetter(1), reverse=True)
 
-#print(len(words),pow(len(words),2))
-#Wiosna
-#wiosna
+# print(len(words),pow(len(words),2))
+# Wiosna
+# wiosna
 
 # import re
 # tekst="siała !!!???...,,,"
@@ -1394,22 +1394,22 @@
 
 # import re
 # print(list(set( re.findall("\W",open('tadzio.txt',encoding='utf-8').read())  )))
-#https://blog.jsystems.pl/show_post/Wyra%C5%BCenia_regularne/
-#Tadeusz 354
-#Litwa 255
-#Helena 155
+# https://blog.jsystems.pl/show_post/Wyra%C5%BCenia_regularne/
+# Tadeusz 354
+# Litwa 255
+# Helena 155
 
-#Tadeusz
-#Tadeusz.
-#Tadeusz,
-#Tadeusz!
+# Tadeusz
+# Tadeusz.
+# Tadeusz,
+# Tadeusz!
 
 # string="baba baba baba"
 # print(string.count('baba'))
 
-#przerwa do 11:38
+# przerwa do 11:38
 
-#33.Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10.
+# 33.Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10.
 
 # for x in range(-10,11):
 #     print(x,1/x)
@@ -1450,7 +1450,7 @@
 #     except:
 #         ....
 
-#34. Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10
+# 34. Wyświetl wynik dzielenia 1 przez kolejne liczby z zakresu -10 do 10
 # w taki sposob by w przypadku wyjatku nie przerywac dzialania petli a po prostu wyswietlic
 # na konsoli informację o błędzie i przejsc do dalszego przetwarzania
 
@@ -1461,7 +1461,7 @@
 #     except ZeroDivisionError:
 #         print(f'błąd dzielenia przez zero przy x={x}')
 
-#file=open('errors.log',encoding='utf-8',mode="w")
+# file=open('errors.log',encoding='utf-8',mode="w")
 # file=open('errors.log',encoding='utf-8',mode="w")
 # for x in range(1,11):
 #     file.write(f"element numer {x}\n")
@@ -1472,13 +1472,13 @@
 #         file.write(f"element numer {x}\n")
 
 
-#35. Przetwórz wszystkie wiersze z dane.csv
+# 35. Przetwórz wszystkie wiersze z dane.csv
 # wyswietlajac na konsoli dane z wiersza wzbogacone o bmi.
 # Nie podmieniaj przecinków etc w tekscie.
 # W przypadku pojawienia się wyjątku na obliczaniu bmi (w zasadzie rzutowaniu na float)
 # dla   któregoś wiersza chcemy go zapisać (cały wiersz)
 # w osobnym pliku bledy.csv wzbogacony o informację o rodzaju błędu
-#4;Andrzej;1,89;90;IOERROR
+# 4;Andrzej;1,89;90;IOERROR
 
 
 # for d in [e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]:
@@ -1488,12 +1488,12 @@
 #     except ValueError as e :
 #         with open('errors.log',encoding="utf-8",mode="w") as file:
 #             file.write(";".join(d)+f"ValueError - {e}\n")
-            #file.write(f"{d[0]};{d[1]};{d[2]};{d[3]};{d[4]};ValueError - {e}\n")
+# file.write(f"{d[0]};{d[1]};{d[2]};{d[3]};{d[4]};ValueError - {e}\n")
 
 
-#DRY
+# DRY
 
-#przerwa obiadowa do 13:00
+# przerwa obiadowa do 13:00
 #
 # def komendant():
 #     print('jeb z granatnika ;)')
@@ -1542,7 +1542,7 @@
 # print(typ(0))
 # print(typ(-1))
 
-#36. Stwórz funkcję która przyjmie wzrost i masę a zwróci zaokraglone do 2 miejsc po przecinku BMI.
+# 36. Stwórz funkcję która przyjmie wzrost i masę a zwróci zaokraglone do 2 miejsc po przecinku BMI.
 # W przypadku pojawienia się wyjątku, wyświetl na konsoli jaki wystąpił problem a z funkcji zwróć -1.
 
 # def bmi(w,m):
@@ -1569,7 +1569,7 @@
 # witacz('Andrzej')
 # witacz(imie='Andrzej')
 
-#w Pythonie nie ma przeciążania
+# w Pythonie nie ma przeciążania
 # def witacz(a):
 #     pass
 #
@@ -1585,7 +1585,7 @@
 # witacz('Andrzej')
 #
 
-#37. Napisz funkcję która zwróci pod postacią listy krotek zawartość pliku
+# 37. Napisz funkcję która zwróci pod postacią listy krotek zawartość pliku
 #   którego nazwę przekażemy przez pierwszy argument funkcji. Plik ma być otwarty z kodowaniem
 #   podanym jako drugi argument funkcji. Jeśli kodowanie nie zostanie podane ma przyjac utf-8
 
@@ -1608,10 +1608,10 @@
 #     print(d)
 
 
-#38. Napisz funkcję która bedzie w stanie przyjąć taką listę jaka jest zwracana
- # przez funkcję z poprzedniego ćwiczenia. Funkcja ta ma przeiterować po otrzymanej
- # liście i wyświetlić każdy element na konsoli. Odbierz dane z funkcji z ćwiczenia
- # poprzedniego i przekaz do nowo powstalej funkcji.
+# 38. Napisz funkcję która bedzie w stanie przyjąć taką listę jaka jest zwracana
+# przez funkcję z poprzedniego ćwiczenia. Funkcja ta ma przeiterować po otrzymanej
+# liście i wyświetlić każdy element na konsoli. Odbierz dane z funkcji z ćwiczenia
+# poprzedniego i przekaz do nowo powstalej funkcji.
 
 # def get_data(file_name,enc="utf-8",divisor=";"):
 #     return [e.strip().split(divisor) for e in open(file_name,encoding=enc)]
@@ -1660,8 +1660,8 @@
 # print(invoice_dao.get_all())
 # print(lead_dao.get_all())
 
-#39. Funkcje z dwóch ostatnich ćwiczeń (poniżej) przenieś do osobnego modułu.
-#Następnie zaimportuj je i dane odczytane z funkcji get_data przekaz do funkcji print_data
+# 39. Funkcje z dwóch ostatnich ćwiczeń (poniżej) przenieś do osobnego modułu.
+# Następnie zaimportuj je i dane odczytane z funkcji get_data przekaz do funkcji print_data
 
 # def get_data(file_name,enc="utf-8",divisor=";"):
 #     return [e.strip().split(divisor) for e in open(file_name,encoding=enc)]
@@ -1674,7 +1674,7 @@
 # ct.print_data( ct.get_data('dane.csv') )
 
 
-#przerwa do 14:26
+# przerwa do 14:26
 
 #
 # import dao.invoice_dao
@@ -1684,23 +1684,23 @@
 # import dao.invoice_dao as idao
 # print(idao.get_all())
 
-#from dao.invoice_dao import  *
-#print(get_all())
+# from dao.invoice_dao import  *
+# print(get_all())
 # import dao.invoice_dao
 # import invoice_dao
 
-#import this
+# import this
 
-#import dao.invoice_dao
+# import dao.invoice_dao
 
-#40.Stwórz pakiet zawierający moduł który bedzie zawierał funkcję przyjmującą wzrost i masę a zwracającą bmi.
+# 40.Stwórz pakiet zawierający moduł który bedzie zawierał funkcję przyjmującą wzrost i masę a zwracającą bmi.
 # Zaimportuj i wywołaj tę funkcję w taki sposób by przy jej wywołaniu nie trzeba było  podawać nazwy pakietu ani modułu.
 
 # from tools.body import get_bmi
 # print(get_bmi(1.76,72))
 
-#TKINTER
-#EASYGUI
+# TKINTER
+# EASYGUI
 
 # import requests
 # response=requests.get('https://jsystems.pl/static/blog/python/dane.json')
@@ -1718,7 +1718,7 @@
 #     for j in data['jezyki']:
 #         print(j)
 
-#41. z usługi sieciowej http://jsystems.pl/Universe/samaTabelka.do pobierz informację o szkoleniach.
+# 41. z usługi sieciowej http://jsystems.pl/Universe/samaTabelka.do pobierz informację o szkoleniach.
 # na konsoli wyswietl tytuly, miasta i daty wszystkich szkolen które w tytule mają malymi badz duzymi   literami "Docker"
 #
 # import requests
@@ -1794,8 +1794,8 @@
 #     for row in cursor:
 #         print(row[1])
 
-#42.Napisz funkcję która przyjmie przez parametr nazwę pliku do którego zapisze
-#wszystkie wiersze z tabelki employees w fomacie csv. Uruchom funkcję...
+# 42.Napisz funkcję która przyjmie przez parametr nazwę pliku do którego zapisze
+# wszystkie wiersze z tabelki employees w fomacie csv. Uruchom funkcję...
 
 
 # import psycopg2
@@ -1806,12 +1806,12 @@
 #         for w in cursor:
 #             line=';'.join([str(e) for e in w])+"\n"
 #             file.write(line)
-            #print(line)
-            #line=f'{w[0]};{w[1]};{w[2]};{w[3]};{w[4]}\n'
-            #print(line)
+# print(line)
+# line=f'{w[0]};{w[1]};{w[2]};{w[3]};{w[4]}\n'
+# print(line)
 
 
-#przerwa do 10:21
+# przerwa do 10:21
 
 #
 # from faker import Faker
@@ -1831,6 +1831,80 @@
 #         cursor.execute(sql)
 #     connection.commit()
 
-#43. Załaduj do tabelki players wszystkie dane z pliku dane.csv
+# 43. Załaduj do tabelki players wszystkie dane z pliku dane.csv
+
+# import psycopg2
+# with psycopg2.connect(host="localhost",database="postgres",port=5432, user="aplikacja", password="oracle") as connection:
+#     cursor=connection.cursor()
+#     for e in [f.strip().split(';') for f in open('dane.csv',encoding='utf-8')]:
+#         sql=f"insert into players values ({e[0]},'{e[1]}','{e[2]}',{e[3]},{e[4]})"
+#         print(sql)
+#         cursor.execute(sql)
+#     #connection.commit()
 
 
+# klasa
+# obiekt
+
+# class Person:
+#     first_name = None
+#     last_name = None
+#
+#
+# p1 = Person()
+# p1.first_name = 'Ferdynand'
+# p1.last_name = 'Kiepski'
+#
+# p2 = Person()
+# p2.first_name = 'Arnold'
+# p2.last_name = 'Boczek'
+#
+# print(p1.first_name, p1.last_name)
+# print(p2.first_name, p2.last_name)
+
+#
+# class Person:
+#     first_name = None
+#     last_name = None
+#     def introduce_yourself(self):
+#         print(f"Hello!")
+#
+# p1 = Person()
+# p1.first_name = 'Ferdynand'
+# p1.last_name = 'Kiepski'
+#
+# p2 = Person()
+# p2.first_name = 'Arnold'
+# p2.last_name = 'Boczek'
+#
+# print(p1.first_name, p1.last_name)
+# print(p2.first_name, p2.last_name)
+#
+# p1.introduce_yourself()
+# p2.introduce_yourself()
+
+#
+# class Person:
+#     first_name = None
+#     last_name = None
+#     def introduce_yourself(self):
+#         print(f"Hello! I'm {self.first_name} {self.last_name}!")
+#
+# p1 = Person()
+# p1.first_name = 'Ferdynand'
+# p1.last_name = 'Kiepski'
+#
+# p2 = Person()
+# p2.first_name = 'Arnold'
+# p2.last_name = 'Boczek'
+#
+# print(p1.first_name, p1.last_name)
+# print(p2.first_name, p2.last_name)
+#
+# p1.introduce_yourself()
+# p2.introduce_yourself()
+
+
+#44. Stwórz klasę "Samochod" posiadającą pola "marka", "model", "rejestracja".
+# Klasa ta powinna zawierać też metodę "wyswietl" wypisującą dane z obiektu na konsoli. Stwórz dwa obiekty
+# tej klasy i korzystajac  z metody "wyświetl" wyswietl na konsoli ich zawartość.
