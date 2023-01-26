@@ -1769,3 +1769,8 @@
 # }
 # response=requests.post("http://jsystems.pl/Universe/samaTabelka.do")
 # print(response.status_code)
+
+
+import psycopg2
+connection=psycopg2.connect(host="localhost",database="postgres",port=5432, user="aplikacja", password="oracle")
+connection.close()
