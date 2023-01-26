@@ -2146,3 +2146,189 @@
 
 #50. Załaduj dane z pliku dane.csv do postaci listy obiektów.
 # Następnie przeiteruj po tej liście i wyświetl zawartość każdego z obiektów
+#
+# class Player:
+#     def __init__(self,player_id,first_name,last_name,height,weight):
+#         self.player_id=player_id
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.height=height
+#         self.weight=weight
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# result=[]
+# for f in [e.strip().split(';') for e in open('dane.csv',encoding='utf-8')]:
+#     p=Player(f[0],f[1],f[2],f[3],f[4])
+#     result.append(p)
+#
+# for r in result:
+#     print(r)
+
+
+#
+# import csv_tools as ct
+# class Player:
+#     def __init__(self,player_id,first_name,last_name,height,weight):
+#         self.player_id=player_id
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.height=height
+#         self.weight=weight
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# result=[]
+# for f in ct.get_data('dane.csv'):
+#     p=Player(f[0],f[1],f[2],f[3],f[4])
+#     result.append(p)
+#
+# for r in result:
+#     print(r)
+#
+#
+# import csv_tools as ct
+# class Player:
+#     def __init__(self,player_id,first_name,last_name,height,weight):
+#         self.player_id=player_id
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.height=height
+#         self.weight=weight
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# result=[]
+# for f in ct.get_data('dane.csv'):
+#     p=Player(*f)
+#     result.append(p)
+#
+# for r in result:
+#     print(r)
+
+
+#
+# import csv_tools as ct
+# class Player:
+#     def __init__(self,player_id,first_name,last_name,height,weight):
+#         self.player_id=player_id
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.height=height
+#         self.weight=weight
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# result=[Player(*f) for f in ct.get_data('dane.csv')]
+#
+# for r in result:
+#     print(r)
+#
+#
+# import csv_tools as ct
+# class Player:
+#     def __init__(self,player_id,first_name,last_name,height,weight):
+#         self.player_id=player_id
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.height=height
+#         self.weight=weight
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# for r in [Player(*f) for f in ct.get_data('dane.csv')]:
+#     print(r)
+#
+#
+
+# class Person:
+#     def __init__(self,first_name,last_name,age):
+#         if len(first_name)==0:
+#             raise Exception('Imię nie może być puste')
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.age=age
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# p=Person('','Klusiewicz',36)
+# print(p)
+
+
+# class Person:
+#     def __init__(self,first_name,last_name,age):
+#         if len(first_name)==0 and first_name is not None:
+#             raise Exception('Imię nie może być puste')
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.age=age
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# p=Person(None,'Klusiewicz',36)
+# print(p)
+#
+# class Person:
+#     def __init__(self,first_name,last_name,age):
+#         if first_name is  None or len(first_name)==0:
+#             raise Exception('Imię nie może być puste')
+#         if last_name is None or len(last_name) == 0:
+#             raise Exception('Nazwisko nie może być puste')
+#         if age is None:
+#             raise Exception('nie podano wieku')
+#         if age<=0:
+#             raise Exception('wiek musi być większy od 0')
+#
+#         self.first_name=first_name
+#         self.last_name=last_name
+#         self.age=age
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# p=Person('Andrzej','Klusiewicz',36)
+# p.first_name=None
+# p.last_name=None
+# p.age=None
+# print(p)
+
+
+# class Person:
+#     def __init__(self,first_name,last_name,age):
+#         self.set_first_name(first_name)
+#         self.set_last_name(last_name)
+#         self.set_age(age)
+#     def set_first_name(self,first_name):
+#         if first_name is None or len(first_name) == 0:
+#             raise Exception('Imię nie może być puste')
+#         self.__first_name = first_name
+#
+#     def set_last_name(self,last_name):
+#         if last_name is None or len(last_name) == 0:
+#             raise Exception('Nazwisko nie może być puste')
+#         self.__last_name=last_name
+#     def set_age(self,age):
+#         if age is None:
+#             raise Exception('nie podano wieku')
+#         if age<=0:
+#             raise Exception('wiek musi być większy od 0')
+#
+#         self.__age=age
+#     def get_first_name(self):
+#         return self.__first_name
+#     def get_last_name(self):
+#         return self.__last_name
+#     def get_age(self):
+#         return self.__age
+#     def __str__(self):
+#         return str(self.__dict__)
+#
+# p=Person('Andrzej','Klusiewicz',36)
+# p.set_first_name(None)
+# print(p)
+
+#51. Stwórz klasę Samochod od nowa z polami marka, model, rejestracja oraz zaimplementowaną metodą __str__.
+# Zadbaj o to by w klasie samochód wszystkie pola były prywatne, ale by istniały metody typu setter
+# służące do ustawiania wartości tych pól. Zadbaj o to by wszystkie odwołania wewnątrz klasy do pól
+# były wykonywane za pośrednictwem setterów. Zadbaj o to by nie dało się ustawić marki ani modelu o
+# zerowej długości oraz o to by długość rejestracji zawsze mieściła się w zakresie 7-8 znaków.
+# W przypadku podania niewłasciwych danych rzuć wyjątkiem z adekwatnym komunikatem.
