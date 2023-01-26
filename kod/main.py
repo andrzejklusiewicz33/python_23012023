@@ -1770,7 +1770,29 @@
 # response=requests.post("http://jsystems.pl/Universe/samaTabelka.do")
 # print(response.status_code)
 
+#
+# import psycopg2
+# connection=psycopg2.connect(host="localhost",database="postgres",port=5432, user="aplikacja", password="oracle")
+# connection.close()
 
-import psycopg2
-connection=psycopg2.connect(host="localhost",database="postgres",port=5432, user="aplikacja", password="oracle")
-connection.close()
+# with open() as file:
+#     pass
+
+# import psycopg2
+# with psycopg2.connect(host="localhost",database="postgres",port=5432, user="aplikacja", password="oracle") as connection:
+#     cursor=connection.cursor()
+#     sql='select * from products order by stock desc'
+#     cursor.execute(sql)
+#     for row in cursor:
+#         print(row)
+
+# import psycopg2
+# with psycopg2.connect(host="localhost",database="postgres",port=5432, user="aplikacja", password="oracle") as connection:
+#     cursor=connection.cursor()
+#     sql='select * from products order by stock desc'
+#     cursor.execute(sql)
+#     for row in cursor:
+#         print(row[1])
+
+#42.Napisz funkcję która przyjmie przez parametr nazwę pliku do którego zapisze
+#wszystkie wiersze z tabelki employees w fomacie csv. Uruchom funkcję...
