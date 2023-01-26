@@ -2036,7 +2036,7 @@
 encoding=utf-8
 timezone=-2
 color=black
-# Stwórz klasę Ustawienia która będzie posiadała słownik jako pole.
+# Stwórz klasę Settings która będzie posiadała słownik jako pole.
 # Niech każdy obiekt klasy ustawienia podczas jego tworzenia wczytuje do tego słownika zawartość pliku konfiguracyjnego w taki sposób,
 # by pierwsza kolumna stanowiła klucze dla słownika a druga wartości.
 #Po stworzeniu obiektu wydrukuj zawartosc slownika z obiektu na konsoli
