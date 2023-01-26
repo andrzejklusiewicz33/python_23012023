@@ -2033,10 +2033,68 @@
 
 
 #48. Stwórz plik konfiguracyjny z zawartością:
-encoding=utf-8
-timezone=-2
-color=black
+# encoding=utf-8
+# timezone=-2
+# color=black
 # Stwórz klasę Settings która będzie posiadała słownik jako pole.
 # Niech każdy obiekt klasy Settings podczas jego tworzenia wczytuje do tego słownika zawartość pliku konfiguracyjnego w taki sposób,
 # by pierwsza kolumna stanowiła klucze dla słownika a druga wartości.
 #Po stworzeniu obiektu wydrukuj zawartosc slownika z obiektu na konsoli
+
+# class Settings:
+#     def __init__(self):
+#         self.config=dict()
+#         for f in [e.strip().split('=') for e in open('ustawienia.conf',encoding='utf-8')]:
+#             self.config[f[0]]=f[1]
+#
+# s=Settings()
+# print(s.config)
+# print(s.config['color'])
+
+
+#przerwa obiadowa do 13:00
+#
+# class Person:
+#     first_name = None
+#     last_name = None
+#     def __init__(self,first_name,last_name):
+#         self.first_name=first_name
+#         self.last_name=last_name
+#
+#     def __str__(self):
+#         return "zserializowany obiekt"
+#     def introduce_yourself(self):
+#         print(f"Hello! I'm {self.first_name} {self.last_name}!")
+#
+# p=Person('Andrzej','Klusiewicz')
+# #print(p.first_name,p.last_name)
+# print(p)
+
+
+
+# class Person:
+#     first_name = None
+#     last_name = None
+#     def __init__(self,first_name,last_name):
+#         self.first_name=first_name
+#         self.last_name=last_name
+#
+#     def __str__(self):
+#         return f"first_name={self.first_name}, last_name={self.last_name}"
+#     def introduce_yourself(self):
+#         print(f"Hello! I'm {self.first_name} {self.last_name}!")
+#
+# p=Person('Andrzej','Klusiewicz')
+# #print(p.first_name,p.last_name)
+# print(p)
+
+#49. Przesłoń metodę "__str__" w klasie "Samochod". Stwórz obiekt tej klasy i wyswietl jego zawartość na konsoli korzystając z __str__
+
+
+class Samochod:
+    def __init__(self,marka,model,rejestracja):
+        self.marka=marka
+        self.model=model
+        self.rejestracja=rejestracja
+    def wyswietl(self):
+        print(f'marka={self.marka}, model={self.model}, rejestracja={self.rejestracja}')
