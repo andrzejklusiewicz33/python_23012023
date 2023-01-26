@@ -26,3 +26,12 @@ insert into products(product_name,price,description,stock) values ('Wihajster',3
 
 select * from employees;
 select * from products;
+
+
+create table players (
+	player_id integer primary key,
+	first_name text not null,
+	last_name text not null,
+	height numeric not null,
+	weight numeric not null
+);

@@ -1785,7 +1785,7 @@
 #     cursor.execute(sql)
 #     for row in cursor:
 #         print(row)
-
+#
 # import psycopg2
 # with psycopg2.connect(host="localhost",database="postgres",port=5432, user="aplikacja", password="oracle") as connection:
 #     cursor=connection.cursor()
@@ -1796,3 +1796,41 @@
 
 #42.Napisz funkcję która przyjmie przez parametr nazwę pliku do którego zapisze
 #wszystkie wiersze z tabelki employees w fomacie csv. Uruchom funkcję...
+
+
+# import psycopg2
+# with psycopg2.connect(host="localhost",database="postgres",port=5432, user="aplikacja", password="oracle") as connection:
+#     cursor=connection.cursor()
+#     cursor.execute('select * from employees')
+#     with open("employees.csv",encoding='utf-8',mode='w') as file:
+#         for w in cursor:
+#             line=';'.join([str(e) for e in w])+"\n"
+#             file.write(line)
+            #print(line)
+            #line=f'{w[0]};{w[1]};{w[2]};{w[3]};{w[4]}\n'
+            #print(line)
+
+
+#przerwa do 10:21
+
+#
+# from faker import Faker
+# faker=Faker('PL_pl')
+# for x in range(10):
+#     print(faker.first_name(),faker.last_name(),faker.phone_number(),faker.email(),faker.company(),faker.paragraph())
+
+
+# import psycopg2
+# import random
+# from faker import Faker
+# f=Faker('PL_pl')
+# with psycopg2.connect(host="localhost",database="postgres",port=5432, user="aplikacja", password="oracle") as connection:
+#     cursor=connection.cursor()
+#     for x in range(10):
+#         sql=f"insert into employees(first_name,last_name,salary,description) values ('{f.first_name()}','{f.last_name()}',{random.randint(3000,20000)},'{f.paragraph()}');"
+#         cursor.execute(sql)
+#     connection.commit()
+
+#43. Załaduj do tabelki players wszystkie dane z pliku dane.csv
+
+
