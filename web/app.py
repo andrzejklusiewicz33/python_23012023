@@ -18,12 +18,13 @@ def show_employees():
 
 @app.route('/about')
 def about():
-    fn="Andrzej"
-    ln="Klusiewicz"
-    em="klusiewicz@jsystems.pl"
-    return render_template("about.html",first_name=fn,last_name=ln,email=em)
+    return render_template("about.html",author=Author())
 
 
+@app.route("/fruit.json")
+def fruit_json():
+    fruit=Fruit()
+    return fruit.serialize()
 
 @app.route('/examples')
 def examples():
@@ -49,6 +50,7 @@ if __name__ == '__main__':
 #56. W osobnym module domain stwórz klasę Author z polami first_name,last_name, email (i ustawionymi w polach wartościami)
 #Następnie spowoduj by kontroler ekranu /about przekazywał do widoku obiekt tej klasy. Na poziomie widoku
 #zaktualizuj kod w taki sposób by wyświetlane były dane z przekazanego obiektu
+#57. Dodaj usługę sieciową która zwróci zserializowaną postać obiektu klasy Author
 
 #Flask,Django,FastApi, Pyramid
 #uWSGI
