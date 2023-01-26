@@ -1720,3 +1720,52 @@
 
 #41. z usługi sieciowej http://jsystems.pl/Universe/samaTabelka.do pobierz informację o szkoleniach.
 # na konsoli wyswietl tytuly, miasta i daty wszystkich szkolen które w tytule mają malymi badz duzymi   literami "Docker"
+#
+# import requests
+# response=requests.get('http://jsystems.pl/Universe/samaTabelka.do',auth=("TwojaStara","Maslo"))
+# if response.status_code==200:
+#     print('ok. Status code=200')
+#     #data=response.json()
+#     #print(data)
+#     for d in response.json():
+#         if "docker" in d['tytul_szkolenia'].lower():
+#             print(d)
+# else:
+#     print(f"Nie pobrałem danych. Status code={response.status_code}")
+
+
+#
+# import requests
+# response=requests.get('http://jsystems.pl/Universe/samaTabelka.do',auth=("TwojaStara","Maslo"))
+# if response.status_code==200:
+#     print('ok. Status code=200')
+#     for d in response.json():
+#         if "docker" in d['tytul_szkolenia'].lower():
+#             print(d['tytul_szkolenia'],d['termin'],d['miasto'])
+# else:
+#     print(f"Nie pobrałem danych. Status code={response.status_code}")
+
+#
+# import requests
+# response=requests.get('http://jsystems.pl/Universe/samaTabelka.do',auth=("TwojaStara","Maslo"))
+# if response.status_code==200:
+#     print('ok. Status code=200')
+#     for e in [(d['tytul_szkolenia'],d['termin'],d['miasto']) for d in response.json() if "docker" in d['tytul_szkolenia'].lower()]: print(e)
+# else:
+#     print(f"Nie pobrałem danych. Status code={response.status_code}")
+
+
+# import requests
+# response=requests.get('http://jsystems.pl/Universe/samaTabelka.do')
+# for e in [(d['tytul_szkolenia'],d['termin'],d['miasto']) for d in response.json() if "docker" in d['tytul_szkolenia'].lower()]: print(e)
+
+# import requests
+# for e in [(d['tytul_szkolenia'],d['termin'],d['miasto']) for d in requests.get('http://jsystems.pl/Universe/samaTabelka.do').json() if "docker" in d['tytul_szkolenia'].lower()]: print(e)
+#
+# import requests
+# data={
+#     "user":"TwojStary",
+#     "password":"TwojaStara"
+# }
+# response=requests.post("http://jsystems.pl/Universe/samaTabelka.do")
+# print(response.status_code)
