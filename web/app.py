@@ -22,7 +22,9 @@ def about():
 @app.route('/examples')
 def examples():
     print("Ktoś wszedł na ekran /examples....")
-    return render_template("examples.html")
+    f="banana"
+    c="yellow"
+    return render_template("examples.html",fruit=f,color=c)
 
 
 if __name__ == '__main__':
@@ -33,6 +35,8 @@ if __name__ == '__main__':
 #Po wejściu na każdy z tych ekranów powinien pojawić się komunikat z tekstem jednoznacznie identyfikujacym na jakiej podstronie jesteściee
 #53. Zadbaj o to, by wszystkie ekrany były obsługiwane przez osobne pliki html
 #54. Do wszystkich ekranów dodaj działającce menu
+#55. Do widoku ekranu /about przekaż informację o swoim imieniu, nazwisku i emailu. Wyświetl te dane na ekranie w formie tabelki.
+
 
 #Flask,Django,FastApi, Pyramid
 #uWSGI
