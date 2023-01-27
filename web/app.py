@@ -19,6 +19,13 @@ def show_products():
 def products_json():
     return [e.serialize() for e in pdao.get_all()]
 
+@app.route('/show_product_details')
+def show_product_details():
+    id=request.args.get('id')
+    print(f'szczegóły produktu o id={id}')
+    return render_template("show_product_details.html")
+
+
 @app.route('/show_employees')
 def show_employees():
     return render_template("show_employees.html", employees=edao.get_all())
@@ -31,7 +38,8 @@ def employees_json():
 def show_employee_detais():
     id=request.args.get('id')
     print(f"szczegóły pracownika o id={id}")
-    return render_template("show_employee_details.html")
+    e=Employee(1,"Andrzej","Klusiewicz",12345,"strutututu")
+    return render_template("show_employee_details.html",employee=e)
 
 @app.route('/about')
 def about():
@@ -99,3 +107,6 @@ if __name__ == '__main__':
 #63. Na liście produktów dodaj do każdego produktu w kolumnie "Akcje" link do ekranu szczegółów produktu
 #Po kliknięciu na ten link powinien się pojawić ekran z menu i odpowiednim nagłówkiem, a w konsoli
 #powinna się pojawić informacja o id produktu którego szczegóły chcemy podglądać
+
+#64. Na ekranie szczegółów produktu wyświetl jakieś fejkowe
+#dane przekazane z kontrolera (obiekt klasy Product)
