@@ -15,7 +15,12 @@ def get_one(id):
         return Product(*cursor.fetchone())
 
 def save(product):
-    print(f'zapis obiektu Product={product}')
+    sql=f"insert into products(product_name,price,description,stock) values ('{product.product_name}',{product.price},'{product.description}',{product.stock})"
+    with psycopg2.connect(host=settings.host,database=settings.database,port=settings.port, user=settings.username, password=settings.password) as connection:
+        cursor=connection.cursor()
+        cursor.execute(sql)
+        connection.commit()
+
 
 # def get_all():
 #     data = []

@@ -64,6 +64,12 @@ def add_employee_post():
     edao.save(employee)
     return redirect("/show_employees")
 
+@app.route('/delete_employee')
+def delete_employee():
+    id=request.args.get('id')
+    employee=edao.get_one(id)
+    return render_template("delete_employee.html",employee=employee)
+
 @app.route('/about')
 def about():
     return render_template("about.html", author=Author())
@@ -163,3 +169,7 @@ if __name__ == '__main__':
 #będzie przez nią w przyszłości utrwalany
 
 #70. Zadbaj o to by funkcja save w products_dao faktycznie zapisywala dane do bazy...
+
+#71. Dodaj do listy produktow linki prowadzace do ekranu kasowania produktu.
+#Ekran kasowania produktu powinien pytac czy chcesz skasowac ten produkt
+#z podaniem nazwy produktu ktory będzie kasowany.

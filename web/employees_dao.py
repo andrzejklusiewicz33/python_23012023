@@ -10,8 +10,6 @@ def get_all():
         return data
 
 
-
-
 def get_one(id):
     with psycopg2.connect(host=settings.host,database=settings.database,port=settings.port, user=settings.username, password=settings.password) as connection:
         cursor=connection.cursor()
