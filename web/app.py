@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from domain import *
 import employees_dao as edao
 import products_dao as pdao
@@ -26,6 +26,12 @@ def show_employees():
 @app.route('/employees.json')
 def employees_json():
     return [e.serialize() for e in edao.get_all()]
+
+@app.route('/show_employee_details')
+def show_employee_detais():
+    id=request.args.get('id')
+    print(f"szczegóły pracownika o id={id}")
+    return render_template("show_employee_details.html")
 
 @app.route('/about')
 def about():
@@ -85,3 +91,11 @@ if __name__ == '__main__':
 
 # przerwa do 15:36
 #przerwa do 10:11
+
+#nowa linia
+
+#przerwa do 11:31
+
+#63. Na liście produktów dodaj do każdego produktu w kolumnie "Akcje" link do ekranu szczegółów produktu
+#Po kliknięciu na ten link powinien się pojawić ekran z menu i odpowiednim nagłówkiem, a w konsoli
+#powinna się pojawić informacja o id produktu którego szczegóły chcemy podglądać
