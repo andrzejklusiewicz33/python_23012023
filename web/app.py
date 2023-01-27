@@ -34,10 +34,8 @@ def add_product_post():
     price=request.form['price']
     description=request.form['description']
     stock=request.form['stock']
-    print("name=",name)
-    print("price=",price)
-    print("description=",description)
-    print("stock=",stock)
+    product=Product(None,name,price,description,stock)
+    pdao.save(product)
     return redirect("/show_products")
 
 
@@ -163,3 +161,5 @@ if __name__ == '__main__':
 #obiekt klasy Product. Stwórz w products_dao funkcję save i przekaż do niej
 #stworzony obiekt. Funkcja save ma nam wypisać na konsoli zawartość obiektu który
 #będzie przez nią w przyszłości utrwalany
+
+#70. Zadbaj o to by funkcja save w products_dao faktycznie zapisywala dane do bazy...

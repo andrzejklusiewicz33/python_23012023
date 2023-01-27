@@ -14,6 +14,9 @@ def get_one(id):
         cursor.execute(f"select * from products where product_id={id}")
         return Product(*cursor.fetchone())
 
+def save(product):
+    print(f'zapis obiektu Product={product}')
+
 # def get_all():
 #     data = []
 #     data.append(Product(1, "Bulbulator", 1234, "Urządzenie robiące bul bul", 10))

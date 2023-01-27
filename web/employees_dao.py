@@ -19,7 +19,11 @@ def get_one(id):
         return Employee(*cursor.fetchone())
 
 def save(employee):
-    print(f"Zapisz obiektu employee={employee}")
+    sql=f"insert into employees(first_name,last_name,salary,description) values ('{employee.first_name}','{employee.last_name}',{employee.salary},'{employee.description}')"
+    with psycopg2.connect(host=settings.host,database=settings.database,port=settings.port, user=settings.username, password=settings.password) as connection:
+        cursor=connection.cursor()
+        cursor.execute(sql)
+        connection.commit()
 
 #
 # def get_one(id):
