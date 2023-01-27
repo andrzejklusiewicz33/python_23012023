@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% include 'menu.html' %}
+<h1>Dodawanie pracownika</h1>
+<form method="post">
+<table border="1">
+    <tr><th>Imię</th><td><input type="text" size="100"/></td></tr>
+    <tr><th>Nazwisko</th><td><input type="text" size="100"/></td></tr>
+    <tr><th>Wynagrodzenie</th><td><input type="number" size="100"/></td></tr>
+    <tr><th>Opis</th><td>
+        <textarea rows="20" cols="80">
+        </textarea>
+    </td></tr>
+{#    <tr><th>Wynagrodzenie</th><td><input type="password" size="100"/></td></tr>#}
+</table>
+<input type="submit" value="Zapisz"/>
+    <a href="javascript:history.back()">Anuluj</a>
+</form>
+</body>
+</html>

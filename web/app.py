@@ -38,6 +38,10 @@ def show_employee_detais():
     id=request.args.get('id')
     return render_template("show_employee_details.html",employee=edao.get_one(id))
 
+@app.route('/add_employee')
+def add_employee():
+    return render_template("add_employee.html")
+
 @app.route('/about')
 def about():
     return render_template("about.html", author=Author())
@@ -117,3 +121,10 @@ if __name__ == '__main__':
 #66. Zadbaj o to by na ekranie szczegółów produktu jeśli stan magazynowy wynosi zero to
 #niech ten stan magazynowy będzie wyświetlany na czerwono pogrubiony,
 #a jeśli więcej niż 0 to na zielono pogrubiony
+
+
+#TinyMCE
+
+#67. Na ekranie listy produktów dodaj link do ekranu dodawania produktu.
+#Spowoduj by po kliknięciu na ten link wyświetlił się formularz który będzie
+#służył do wprowadzania danych o produkcie.
