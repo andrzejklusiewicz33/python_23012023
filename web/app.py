@@ -22,9 +22,7 @@ def products_json():
 @app.route('/show_product_details')
 def show_product_details():
     id=request.args.get('id')
-    print(f'szczegóły produktu o id={id}')
-    p=Product(1,"Laptop",5000,"Lapek z winszajzem",100)
-    return render_template("show_product_details.html",product=p)
+    return render_template("show_product_details.html",product=pdao.get_one(id))
 
 
 @app.route('/show_employees')
@@ -113,3 +111,9 @@ if __name__ == '__main__':
 #dane przekazane z kontrolera (obiekt klasy Product)
 
 #65. Spraw by dane na ekranie szczegółów produktu pochodziły z bazy...
+
+#przerwa obiadowa do 13:12
+
+#66. Zadbaj o to by na ekranie szczegółów produktu jeśli stan magazynowy wynosi zero to
+#niech ten stan magazynowy będzie wyświetlany na czerwono pogrubiony,
+#a jeśli więcej niż 0 to na zielono pogrubiony
