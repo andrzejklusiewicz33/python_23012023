@@ -14,7 +14,14 @@ def show_products():
 
 @app.route('/show_employees')
 def show_employees():
-    return render_template("show_employees.html")
+    data=[]
+    e1=Employee(1,'Andrzej','Klusiewicz',12345,"programmer z zawodu i pasji")
+    data.append(e1)
+    e2=Employee(2,'Marian','Paździoch',8000,"Programista Front-End")
+    data.append(e2)
+    e3=Employee(3,'Babka','Kiepska',10000,"Babka dawaj rentę!")
+    data.append(e3)
+    return render_template("show_employees.html",employees=data)
 
 @app.route('/about')
 def about():
@@ -31,7 +38,8 @@ def fruit_json():
 
 @app.route('/examples')
 def examples():
-    return render_template("examples.html",fruit=Fruit())
+    data=['python','java','javascript','R']
+    return render_template("examples.html",fruit=Fruit(),data=data)
 
 # @app.route('/examples')
 # def examples():
@@ -54,6 +62,11 @@ if __name__ == '__main__':
 #Następnie spowoduj by kontroler ekranu /about przekazywał do widoku obiekt tej klasy. Na poziomie widoku
 #zaktualizuj kod w taki sposób by wyświetlane były dane z przekazanego obiektu
 #57. Dodaj usługę sieciową która zwróci zserializowaną postać obiektu klasy Author
+
+#58. Stwórz w domain.py klasę Product która będzie reprezentowała encje produktu. Przekaż z kontrolera (w app.py)
+#kilka przykładowych obiektów tej klasy do widoku /show_products
+#Na poziomie widoku wydrukuj te dane w postaci tabelki (ale bez pol description i stock)
+
 
 #Flask,Django,FastApi, Pyramid
 #uWSGI
