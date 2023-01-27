@@ -9,6 +9,36 @@ def get_all():
         data=[Employee(*w) for w in cursor]
         return data
 
+
+
+
+def get_one(id):
+    with psycopg2.connect(host=settings.host,database=settings.database,port=settings.port, user=settings.username, password=settings.password) as connection:
+        cursor=connection.cursor()
+        cursor.execute(f"select * from employees where employee_id={id}")
+        return Employee(*cursor.fetchone())
+
+#
+# def get_one(id):
+#     with psycopg2.connect(host=settings.host,database=settings.database,port=settings.port, user=settings.username, password=settings.password) as connection:
+#         cursor=connection.cursor()
+#         cursor.execute(f"select * from employees where employee_id={id}")
+#         row=cursor.fetchone()
+#         return Employee(*row)
+
+#
+# def get_one(id):
+#     sql=f"select * from employees where employee_id={id}"
+#     with psycopg2.connect(host=settings.host,database=settings.database,port=settings.port, user=settings.username, password=settings.password) as connection:
+#         cursor=connection.cursor()
+#         cursor.execute(sql)
+#         row=cursor.fetchone()
+#         employee=Employee(*row)
+#         return employee
+
+
+
+
 #Employee.query.filter().all()
 #SQLAlchemy
 #Django ORM

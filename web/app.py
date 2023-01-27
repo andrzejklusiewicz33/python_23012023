@@ -23,7 +23,8 @@ def products_json():
 def show_product_details():
     id=request.args.get('id')
     print(f'szczegóły produktu o id={id}')
-    return render_template("show_product_details.html")
+    p=Product(1,"Laptop",5000,"Lapek z winszajzem",100)
+    return render_template("show_product_details.html",product=p)
 
 
 @app.route('/show_employees')
@@ -37,9 +38,7 @@ def employees_json():
 @app.route('/show_employee_details')
 def show_employee_detais():
     id=request.args.get('id')
-    print(f"szczegóły pracownika o id={id}")
-    e=Employee(1,"Andrzej","Klusiewicz",12345,"strutututu")
-    return render_template("show_employee_details.html",employee=e)
+    return render_template("show_employee_details.html",employee=edao.get_one(id))
 
 @app.route('/about')
 def about():
@@ -60,6 +59,8 @@ def fruit_json():
 @app.route('/examples')
 def examples():
     data = ['python', 'java', 'javascript', 'R']
+    import os
+    print("zalogowany="+os.getlogin( ))
     return render_template("examples.html", fruit=Fruit(), data=data)
 
 
@@ -110,3 +111,5 @@ if __name__ == '__main__':
 
 #64. Na ekranie szczegółów produktu wyświetl jakieś fejkowe
 #dane przekazane z kontrolera (obiekt klasy Product)
+
+#65. Spraw by dane na ekranie szczegółów produktu pochodziły z bazy...
