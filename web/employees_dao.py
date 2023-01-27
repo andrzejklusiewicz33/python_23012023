@@ -18,6 +18,9 @@ def get_one(id):
         cursor.execute(f"select * from employees where employee_id={id}")
         return Employee(*cursor.fetchone())
 
+def save(employee):
+    print(f"Zapisz obiektu employee={employee}")
+
 #
 # def get_one(id):
 #     with psycopg2.connect(host=settings.host,database=settings.database,port=settings.port, user=settings.username, password=settings.password) as connection:

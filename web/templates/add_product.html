@@ -11,12 +11,12 @@
 </h1>
 <form method="post">
     <table border="1">
-        <tr><th>Nazwa</th><td><input type="text" size="100"/></td></tr>
-        <tr><th>Cena</th><td><input type="number"/></td></tr>
+        <tr><th>Nazwa</th><td><input type="text" size="100" name="name" required/></td></tr>
+        <tr><th>Cena</th><td><input type="number" name="price" required/></td></tr>
         <tr><th>Opis</th><td>
-            <textarea rows="20" cols="80"></textarea>
+            <textarea rows="20" cols="80" name="description"></textarea>
         </td></tr>
-        <tr><th>Stan magazynowy</th><td><input type="number" value="0"></td></tr>
+        <tr><th>Stan magazynowy</th><td><input type="number" value="0" name="stock" required></td></tr>
     </table>
     <input type="submit"/>
     <a href="javascript:history.back()">Anuluj</a>

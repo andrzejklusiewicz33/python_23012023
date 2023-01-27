@@ -27,14 +27,20 @@ def show_product_details():
 @app.route('/add_product')
 def add_product():
     return render_template("add_product.html")
-@app.route('/add_employee',methods=['POST'])
+
+@app.route('/add_product',methods=['POST'])
 def add_product_post():
-    data=request.form
-    print("imię=",data['first_name'])
-    print("nazwisko=",data['last_name'])
-    print("wynagrodzenie=",data['salary'])
-    print("opis=",data['description'])
-    return redirect("/show_employees")
+    name=request.form['name']
+    price=request.form['price']
+    description=request.form['description']
+    stock=request.form['stock']
+    print("name=",name)
+    print("price=",price)
+    print("description=",description)
+    print("stock=",stock)
+    return redirect("/show_products")
+
+
 
 @app.route('/show_employees')
 def show_employees():
@@ -52,6 +58,13 @@ def show_employee_detais():
 @app.route('/add_employee')
 def add_employee():
     return render_template("add_employee.html")
+
+@app.route('/add_employee',methods=['POST'])
+def add_employee_post():
+    data=request.form
+    employee=Employee(None,data['first_name'],data['last_name'],data['salary'],data['description'])
+    edao.save(employee)
+    return redirect("/show_employees")
 
 @app.route('/about')
 def about():
@@ -143,3 +156,10 @@ if __name__ == '__main__':
 #68. Dodaj obsługę zdarzenia POST na formularzu dodawania produktu.
 #Obsługa tego zdarzenia ma sprowadzać się do odebrania danych z formularza, wypisania
 #ich na konsoli i przekierowania  na listę produktów
+
+#PRZERWA DO 14:40
+
+#69. Zadbaj o to, by po zatwierdzeniu formularza dodawania produktu tworzony był
+#obiekt klasy Product. Stwórz w products_dao funkcję save i przekaż do niej
+#stworzony obiekt. Funkcja save ma nam wypisać na konsoli zawartość obiektu który
+#będzie przez nią w przyszłości utrwalany
