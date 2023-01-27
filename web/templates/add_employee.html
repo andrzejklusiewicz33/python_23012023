@@ -9,12 +9,11 @@
 <h1>Dodawanie pracownika</h1>
 <form method="post">
 <table border="1">
-    <tr><th>Imię</th><td><input type="text" size="100"/></td></tr>
-    <tr><th>Nazwisko</th><td><input type="text" size="100"/></td></tr>
-    <tr><th>Wynagrodzenie</th><td><input type="number" size="100"/></td></tr>
+    <tr><th>Imię</th><td><input type="text" size="100" name="first_name" required/></td></tr>
+    <tr><th>Nazwisko</th><td><input type="text" size="100" name="last_name" required/></td></tr>
+    <tr><th>Wynagrodzenie</th><td><input type="number" size="100" name="salary" required/></td></tr>
     <tr><th>Opis</th><td>
-        <textarea rows="20" cols="80">
-        </textarea>
+        <textarea rows="20" cols="80" name="description"></textarea>
     </td></tr>
 {#    <tr><th>Wynagrodzenie</th><td><input type="password" size="100"/></td></tr>#}
 </table>

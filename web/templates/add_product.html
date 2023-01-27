@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% include 'menu.html' %}
+<h1>
+    Dodawanie produktu
+</h1>
+<form method="post">
+    <table border="1">
+        <tr><th>Nazwa</th><td><input type="text" size="100"/></td></tr>
+        <tr><th>Cena</th><td><input type="number"/></td></tr>
+        <tr><th>Opis</th><td>
+            <textarea rows="20" cols="80"></textarea>
+        </td></tr>
+        <tr><th>Stan magazynowy</th><td><input type="number" value="0"></td></tr>
+    </table>
+    <input type="submit"/>
+    <a href="javascript:history.back()">Anuluj</a>
+</form>
+</body>
+</html>

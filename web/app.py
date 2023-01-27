@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request,redirect
 from domain import *
 import employees_dao as edao
 import products_dao as pdao
@@ -24,6 +24,17 @@ def show_product_details():
     id=request.args.get('id')
     return render_template("show_product_details.html",product=pdao.get_one(id))
 
+@app.route('/add_product')
+def add_product():
+    return render_template("add_product.html")
+@app.route('/add_employee',methods=['POST'])
+def add_product_post():
+    data=request.form
+    print("imię=",data['first_name'])
+    print("nazwisko=",data['last_name'])
+    print("wynagrodzenie=",data['salary'])
+    print("opis=",data['description'])
+    return redirect("/show_employees")
 
 @app.route('/show_employees')
 def show_employees():
@@ -128,3 +139,7 @@ if __name__ == '__main__':
 #67. Na ekranie listy produktów dodaj link do ekranu dodawania produktu.
 #Spowoduj by po kliknięciu na ten link wyświetlił się formularz który będzie
 #służył do wprowadzania danych o produkcie.
+
+#68. Dodaj obsługę zdarzenia POST na formularzu dodawania produktu.
+#Obsługa tego zdarzenia ma sprowadzać się do odebrania danych z formularza, wypisania
+#ich na konsoli i przekierowania  na listę produktów
