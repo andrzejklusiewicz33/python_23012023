@@ -15,6 +15,9 @@ def index():
 def show_products():
     return render_template("show_products.html",products=pdao.get_all())
 
+@app.route('/products.json')
+def products_json():
+    return [e.serialize() for e in pdao.get_all()]
 
 @app.route('/show_employees')
 def show_employees():
@@ -72,6 +75,7 @@ if __name__ == '__main__':
 # Na poziomie widoku wydrukuj te dane w postaci tabelki (ale bez pol description i stock)
 # 59. Oddeleguj generowanie listy produktów do funkcji get_all() w osobnym module products_dao
 # 60. Do aplikacji dodaj usługę sieciową zwracającą listę wszystkich produktów jako json. DOdaj też do menu link do tej usługi
+# 61. Zadbaj o to by dane na ekranie listy produktów pochodziły z bazy
 
 # Flask,Django,FastApi, Pyramid
 # uWSGI

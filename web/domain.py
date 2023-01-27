@@ -48,3 +48,12 @@ class Product:
 
     def __str__(self):
         return str(self.__dict__)
+
+    def serialize(self):
+        return {
+            "product_id":self.product_id,
+            "product_name": self.product_name,
+            "price":self.price,
+            "description":self.description,
+            "stock":self.stock
+        }
