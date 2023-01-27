@@ -29,6 +29,15 @@ class Employee:
     def __str__(self):
         return str(self.__dict__)
 
+    def serialize(self):
+        return {
+            "employee_id": self.employee_id,
+            "first_name": self.first_name,
+            "last_name" : self.last_name,
+            "salary": self.salary,
+            "description":self.description
+        }
+
 class Product:
     def __init__(self,product_id,product_name,price,description,stock):
         self.product_id=product_id

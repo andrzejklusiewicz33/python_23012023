@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from domain import *
 import employees_dao as edao
-
+import products_dao as pdao
 
 app = Flask(__name__)
 
@@ -13,17 +13,16 @@ def index():
 
 @app.route('/show_products')
 def show_products():
-    data = []
-    data.append(Product(1, "Bulbulator", 1234, "Urządzenie robiące bul bul", 10))
-    data.append(Product(2, "Przyczłap do bulbulatora", 100, "Takie teges co wiesz, no ten to tam", 0))
-    data.append((Product(3, "Wihajster z dzyndzlem", 20, "Na śróbki lub na gwoździe, zależy czy tak czy nie", 50)))
-    return render_template("show_products.html",products=data)
+    return render_template("show_products.html",products=pdao.get_all())
 
 
 @app.route('/show_employees')
 def show_employees():
     return render_template("show_employees.html", employees=edao.get_all())
 
+@app.route('/employees.json')
+def employees_json():
+    return [e.serialize() for e in edao.get_all()]
 
 @app.route('/about')
 def about():
@@ -72,10 +71,11 @@ if __name__ == '__main__':
 # kilka przykładowych obiektów tej klasy do widoku /show_products
 # Na poziomie widoku wydrukuj te dane w postaci tabelki (ale bez pol description i stock)
 # 59. Oddeleguj generowanie listy produktów do funkcji get_all() w osobnym module products_dao
-
+# 60. Do aplikacji dodaj usługę sieciową zwracającą listę wszystkich produktów jako json. DOdaj też do menu link do tej usługi
 
 # Flask,Django,FastApi, Pyramid
 # uWSGI
 # https://www.pythonanywhere.com/
 
 # przerwa do 15:36
+#przerwa do 10:11
