@@ -10,5 +10,9 @@
 <p>
     Czy na pewno chcesz usunąć produkt <b>"{{ product.product_name }}" (stan magazynowy {{ product.stock }})</b>?
 </p>
+<form method="post">
+    <input type="submit" value="TAK"/>
+    <a href="javascript:history.back()">NIE</a>
+</form>
 </body>
 </html>

@@ -44,6 +44,12 @@ def delete_product():
     product=pdao.get_one(id)
     return render_template("delete_product.html",product=product)
 
+@app.route('/delete_product',methods=['POST'])
+def delete_product_post():
+    id=request.args.get('id')
+    print(f'kasowanie produktu o id={id}')
+    return redirect('/show_products')
+
 @app.route('/show_employees')
 def show_employees():
     return render_template("show_employees.html", employees=edao.get_all())
@@ -78,7 +84,7 @@ def delete_employee():
 @app.route('/delete_employee',methods=['POST'])
 def delete_employee_post():
     id=request.args.get('id')
-    print(f'będziemy kasować pracownika o id={id}')
+    edao.delete(id)
     return redirect('/show_employees')
 
 
@@ -189,3 +195,9 @@ if __name__ == '__main__':
 
 #72. Dodaj obsługę post dla kasowania produktu. Obsługa ma polegać na wypisaniu na konsoli id produktu
 #ktorego będziemy kasować i przekierowaniu na liste produktów.
+
+#reportlab
+
+#https://getbootstrap.com/
+
+#73. Zadbaj o to by ekran kasowania produktu faktycznie kasował produkt z bazy...
