@@ -7,5 +7,11 @@
 <body>
 {% include 'menu.html' %}
 <h1>Lista produktów (HTML)</h1>
+<table border="1">
+    <tr><th>Id produktu</th><th>Nazwa</th><th>Cena</th><th>Akcje</th></tr>
+    {% for p in products %}
+        <tr><td>{{ p.product_id }}</td><td>{{ p.product_name }}</td><td>{{ p.price }}</td><td>---</td></tr>
+    {% endfor %}
+</table>
 </body>
 </html>

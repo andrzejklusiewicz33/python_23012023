@@ -28,3 +28,14 @@ class Employee:
 
     def __str__(self):
         return str(self.__dict__)
+
+class Product:
+    def __init__(self,product_id,product_name,price,description,stock):
+        self.product_id=product_id
+        self.product_name=product_name
+        self.price=price
+        self.description=description
+        self.stock=stock
+
+    def __str__(self):
+        return str(self.__dict__)
