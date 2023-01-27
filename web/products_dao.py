@@ -21,6 +21,11 @@ def save(product):
         cursor.execute(sql)
         connection.commit()
 
+def delete(id):
+    with psycopg2.connect(host=settings.host, database=settings.database, port=settings.port, user=settings.username, password=settings.password) as connection:
+        cursor = connection.cursor()
+        cursor.execute(f'delete from products where product_id={id}')
+        connection.commit()
 
 # def get_all():
 #     data = []

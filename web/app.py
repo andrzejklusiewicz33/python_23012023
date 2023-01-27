@@ -1,10 +1,26 @@
-from flask import Flask, render_template, request,redirect
+from flask import Flask, render_template, request,redirect,session
 from domain import *
 import employees_dao as edao
 import products_dao as pdao
 
 app = Flask(__name__)
+app.config['SECRET_KEY']="fsdfsafdsfefefe54rfewafsdfv324342rdfsa"
 
+@app.route('/set_in_session')
+def set_in_session():
+    return render_template("set_in_session.html")
+
+@app.route('/set_in_session', methods=['POST'])
+def set_in_session_post():
+    value=request.form['value']
+    session['value']=value
+    print(f'ustawiłem w sesji wartość "{value}"')
+    return redirect("/show_from_session")
+
+@app.route('/show_from_session')
+def show_from_session():
+    value=session['value']
+    return render_template("show_from_session.html",value=value)
 
 @app.route('/')
 def index():
@@ -47,7 +63,7 @@ def delete_product():
 @app.route('/delete_product',methods=['POST'])
 def delete_product_post():
     id=request.args.get('id')
-    print(f'kasowanie produktu o id={id}')
+    pdao.delete(id)
     return redirect('/show_products')
 
 @app.route('/show_employees')
