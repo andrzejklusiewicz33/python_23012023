@@ -77,6 +77,8 @@ if __name__ == '__main__':
 # 60. Do aplikacji dodaj usługę sieciową zwracającą listę wszystkich produktów jako json. DOdaj też do menu link do tej usługi
 # 61. Zadbaj o to by dane na ekranie listy produktów pochodziły z bazy
 
+# 62. Zadbaj o to by dane służące do łączenia się z bazą (host,uzytkownik, haslo etc.) znajdowaly się w pliku settings.py
+
 # Flask,Django,FastApi, Pyramid
 # uWSGI
 # https://www.pythonanywhere.com/

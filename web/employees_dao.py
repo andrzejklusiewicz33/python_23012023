@@ -1,14 +1,17 @@
 import psycopg2
 from domain import *
-
+import settings
 
 def get_all():
-    with psycopg2.connect(host="localhost",database="postgres",port=5432, user="aplikacja", password="oracle") as connection:
+    with psycopg2.connect(host=settings.host,database=settings.database,port=settings.port, user=settings.username, password=settings.password) as connection:
         cursor=connection.cursor()
         cursor.execute('select * from employees')
         data=[Employee(*w) for w in cursor]
         return data
 
+#Employee.query.filter().all()
+#SQLAlchemy
+#Django ORM
 
 # def get_all():
 #     data = []
