@@ -38,7 +38,11 @@ def add_product_post():
     pdao.save(product)
     return redirect("/show_products")
 
-
+@app.route('/delete_product')
+def delete_product():
+    id=request.args.get('id')
+    product=pdao.get_one(id)
+    return render_template("delete_product.html",product=product)
 
 @app.route('/show_employees')
 def show_employees():
@@ -69,6 +73,14 @@ def delete_employee():
     id=request.args.get('id')
     employee=edao.get_one(id)
     return render_template("delete_employee.html",employee=employee)
+
+
+@app.route('/delete_employee',methods=['POST'])
+def delete_employee_post():
+    id=request.args.get('id')
+    print(f'będziemy kasować pracownika o id={id}')
+    return redirect('/show_employees')
+
 
 @app.route('/about')
 def about():
@@ -173,3 +185,7 @@ if __name__ == '__main__':
 #71. Dodaj do listy produktow linki prowadzace do ekranu kasowania produktu.
 #Ekran kasowania produktu powinien pytac czy chcesz skasowac ten produkt
 #z podaniem nazwy produktu ktory będzie kasowany.
+
+
+#72. Dodaj obsługę post dla kasowania produktu. Obsługa ma polegać na wypisaniu na konsoli id produktu
+#ktorego będziemy kasować i przekierowaniu na liste produktów.

@@ -8,5 +8,9 @@
 {% include 'menu.html' %}
 <h1>Kasowanie pracownika</h1>
 <p>Czy jesteś pewien że chcesz usunąć pracownika <b>"{{ employee.first_name }} {{ employee.last_name }}</b>"?</p>
+<form method="post">
+    <input type="submit" value="TAK"/>
+    <a href="javascript:history.back()">NIE</a>
+</form>
 </body>
 </html>
